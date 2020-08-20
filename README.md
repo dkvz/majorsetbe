@@ -1,4 +1,30 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+# Major Set Wordpress Theme
+Another attempt at web design.
+
+## Requirements
+- Composer
+- NodeJS
+
+A local Wordpress is obviously required to test the changes. I'll explain the quickest test setup you could use someday.
+
+**You should probably either clone the theme repository inside the wp-content/themes directory of your local Wordpress installation, or make a symlink to it there.**
+
+## Setting it up
+From the project root directory:
+```
+composer install
+npm install
+```
+
+From there you can watch for asset changes to auto-recompile the theme:
+```
+npm run watch
+```
+
+## TODO
+
+
+## Original README for the underscore base template
 
 _s
 ===
