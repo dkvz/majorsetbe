@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 100%;
+  box-sizing: border-box;
+  min-height: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.events {
+  background: #00385b;
+}
+
+body.about {
+  background: #fafafa;
+}
+
+.welcome-banner {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 16px;
+}
+
+.welcome-banner-bg {
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+  background-image: url('../images/welcome-banner-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.welcome-banner-title {
+  font-size: 3em;
+  margin: 0;
+  padding: 8px;
+  margin-top: 48px;
+}
+
+.welcome-banner-subtitle {
+  font-size: 1.6em;
+  margin: 0;
+  border-top: 1px solid white;
+  padding: 8px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.welcome-banner-dates {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 32px;
+}
+
+#mc-embedded-subscribe {
+  background-color: #1BAB16;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1em;
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.mc-field-group {
+  flex: 1;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  width: 100%;
+}
+
+#mce-EMAIL {
+  width: 100%;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.welcome-banner-dates-label,
+.welcome-banner-news-letter-label {
+  padding-top: 16px;
+  font-size: 1em;
+  margin: 0;
+}
+
+.welcome-banner-date {
+  box-sizing: border-box;
+  background: white;
+  height: 64px;
+  width: 100%;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.welcome-banner-date:hover {
+}
+
+.welcome-banner-date > .label {
+  color: rgba(0, 0, 0, 0.92);
+  font-weight: bold;
+  font-size: 1em;
+  padding: 2px 0;
+}
+
+.welcome-banner-date > .date {
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  font-size: 0.8em;
+  padding: 2px 0;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.default .toolbar {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.about .toolbar {
+  background: #00385b;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.toolbar > a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 4px;
+}
+.toolbar > a:hover {
+  color: white;
+  background: rgba(255,255,255,0.1);
+}
+
+.toolbar > .fill {
+  flex: 1;
+}
+
+.events-container {
+  max-width: 960px;
+  background: #ffffff;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 64px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.event-container {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.event-container:last-child {
+  border-bottom: none;
+}
+
+.event-container > .label {
+  font-size: 1.8em;
+  padding: 8px 0;
+}
+
+.event-container > .date {
+  font-size: 1.6em;
+  padding: 8px 0;
+}
+
+.musicians {
+  max-width: 640px;
+  margin: 0 auto;
+  padding-top: 88px;
+}
+
+.musicians .title {
+  padding-bottom: 16px;
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+.musician {
+  display: flex;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.musician:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.musician:nth-child(odd) {
+  flex-direction: row;
+}
+
+.musician .info {
+  flex: 1;
+}
+
+.musician:nth-child(even) .info {
+  padding: 16px 24px 16px 16px;
+}
+
+.musician:nth-child(odd) .info {
+  padding: 16px 16px 16px 24px;
+}
+
+.musician .name {
+  font-size: 1.8em;
+  padding-bottom: 16px;
+  font-weight: normal;
+}
+
+.musician .description {
+  text-align: justify;
+}
+
+.musician .picture {
+  width: 200px;
+  height: 200px;
+}
+
+.gallery, .tracks {
+  margin: 0 auto;
+  max-width: 864px;
+  padding: 36px 0 0 0;
+  box-sizing: border-box;
+}
+
+.gallery .pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tracks .track {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.gallery > .pictures > a > img {
+  width: 200px;
+  height: 200px;
+  padding: 8px;
+}
+
+.gallery .title, .tracks .title {
+  font-size: 1.4em;
+  font-weight: normal;
+  padding: 8px 8px 16px 8px;
+}
+
+.footer {
+  background: #112f41;
+  min-height: 48px;
+  margin: 48px 0 0 0;
+}
