@@ -22,7 +22,19 @@ npm run watch
 ```
 
 ## TODO
+- [ ] Is there a symbol library included?
 
+## Discussion
+
+### Colors
+We're going dark on clear.
+
+- #112f41 - Dark blue - Primary color
+- #f2b134 - Accent/border yellow
+- #068587 - Titles - Teal
+- #ed553b - Subtitles/attract/outline - Reddish salmon
+- #e9f6f3 or white or gradient to white - Backgrounds - Light turquoise
+- #778582 - Grayed color/dark backgrounds - Darker turquoise - Could be computed with SASS I guess
 
 ## Original README for the underscore base template
 
