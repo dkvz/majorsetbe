@@ -30,8 +30,12 @@ The "style.css" file at the project root is supposed to be generated using npm s
 * 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
 
 ## TODO
+- [ ] Site logo should probably be smaller on mobile
 - [ ] Is there a symbol library included?
 - [ ] Add something to make it easier to declare the common media queries
+- [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
+- [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least
+- [ ] Flex or grid the search widget to get consistent heihts on the input and button
 
 ## Discussion
 
@@ -49,6 +53,13 @@ We now need to match these to the corresponding SASS variables. Pretty sure it's
 
 I decided to create and import a new scss files for my own color definitions, called it "_ms_colors.scss".
 
+
+### Using assets from inside the theme directory
+Easiest way I found is to do something like this:
+```php
+<img src="<?php bloginfo('template_url'); ?>/assets/logo-text.png" />
+```
+Would be better to have some kind of helper function that creates the correct template asset URL.
 
 ## Original README for the underscore base template
 

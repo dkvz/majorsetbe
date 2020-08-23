@@ -1,6 +1,7 @@
 .site {
 	display: grid;
 	grid-template-columns: auto ($size__site-sidebar);
+	min-height: 100vh;
 	grid-template-areas:
 		"header header"
 		"main sidebar"
@@ -9,18 +10,35 @@
 
 .site-header,
 .site-main,
-.site-footer {
+.site-footer,
+.widget-area {
 	padding: 0.5rem;
 }
 
 .site-header {
-	grid-area: header;
+	grid-area: header;	
+	background-color: $color__ms-primary;
+	box-shadow: $shadow__bottom;
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
 }
 
-.site-branding > img {
-	height: 86px;
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: $size__container-max;
+	margin: 0 auto;
+}
+
+.site-branding > img,
+.site-branding > svg {
+	display: block;
+	height: 120px;
+}
+
+.site-branding > svg {
+	fill: $color__ms-background-1;
 }
 
 .site-main {
@@ -34,6 +52,8 @@
 
 .site-footer {
 	grid-area: footer;
+	background-color: $color__ms-primary;
+	border-top: 4px solid $color__ms-accent-1;
 }
 
 @import "no-sidebar";
