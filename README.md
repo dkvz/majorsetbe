@@ -80,6 +80,8 @@ Since "base" also has body styling, I'll first try copying the site style.css as
 Actually editor-style.css is no longer used as is by the new editor (called Gutenberg or something) - But that last comments seems to elude to a way to make it work with the new editor:
 https://github.com/Automattic/_s/issues/1248#issuecomment-640647913
 
+Someone over here has hacked the editor styling and documents the extra needed classes: https://florianbrinkmann.com/en/editor-styles-gutenberg-4544/
+
 ## Original README for the underscore base template
 
 _s
