@@ -1,7 +1,8 @@
 .site {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: auto;
+	grid-template-columns: auto;
+	grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header"
     "main"
@@ -54,5 +55,6 @@
 .site-footer {
 	grid-area: footer;
 	background-color: $color__ms-primary;
+	color: $color__ms-background-2;
 	border-top: 4px solid $color__ms-accent-1;
 }

@@ -437,6 +437,11 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 
+.site-footer ul, .site-footer ol {
+	list-style: none;
+	margin: 0 0 0.5rem 0.2rem;
+}
+
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
@@ -683,6 +688,11 @@ big {
 
 .widget select {
 	max-width: 100%;
+}
+
+.site-footer .widget-title {
+	color: #068587;
+	margin: 0.5rem 0;
 }
 
 /* Media

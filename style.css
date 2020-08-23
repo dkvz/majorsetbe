@@ -509,6 +509,11 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 
+.site-footer ul, .site-footer ol {
+	list-style: none;
+	margin: 0 0 0.5rem 0.2rem;
+}
+
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
@@ -641,6 +646,7 @@ textarea {
 	display: grid;
 	min-height: 100vh;
 	grid-template-columns: auto;
+	grid-template-rows: auto 1fr auto;
 	grid-template-areas: "header" "main" "footer";
 }
 
@@ -693,6 +699,7 @@ textarea {
 .site-footer {
 	grid-area: footer;
 	background-color: #112f41;
+	color: #e9f6f3;
 	border-top: 4px solid #f2b134;
 }
 
@@ -835,6 +842,11 @@ textarea {
 
 .widget select {
 	max-width: 100%;
+}
+
+.site-footer .widget-title {
+	color: #068587;
+	margin: 0.5rem 0;
 }
 
 /* Media

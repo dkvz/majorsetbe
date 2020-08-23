@@ -13,18 +13,9 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="container">
+			<?php get_sidebar(); ?>
 			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'major_set_be' ) ); ?>">
-					<?php
-					/* translators: %s: CMS name, i.e. WordPress. */
-					printf( esc_html__( 'Proudly powered by %s', 'major_set_be' ), 'WordPress' );
-					?>
-				</a>
-				<span class="sep"> | </span>
-					<?php
-					/* translators: 1: Theme name, 2: Theme author. */
-					printf( esc_html__( 'Theme: %1$s by %2$s.', 'major_set_be' ), 'major_set_be', '<a href="https://dkvz.eu">dkvz</a>' );
-					?>
+				Copyright truc machin
 			</div><!-- .site-info -->
 		</div>
 	</footer><!-- #colophon -->
