@@ -36,6 +36,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
 - [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least
 - [ ] Flex or grid the search widget to get consistent heihts on the input and button
+- [ ] There is a theme checker for Wordpress - Should probably use it at some point
+- [ ] Test the npm scripts on Windows
 
 ## Discussion
 
@@ -53,13 +55,30 @@ We now need to match these to the corresponding SASS variables. Pretty sure it's
 
 I decided to create and import a new scss files for my own color definitions, called it "_ms_colors.scss".
 
-
 ### Using assets from inside the theme directory
 Easiest way I found is to do something like this:
 ```php
 <img src="<?php bloginfo('template_url'); ?>/assets/logo-text.png" />
 ```
 Would be better to have some kind of helper function that creates the correct template asset URL.
+
+### Wysiwyg editor has no styles
+It's normal and discussed in this issue: https://github.com/Automattic/_s/issues/1019
+
+Basically, we have to hack some stuff together to produce a file called "editor-style.css" in the `inc` subdirectory.
+
+I'm going to create a scss file dedicated to this purpose which should import the:
+* "abstract"
+* "base"
+* "components"
+* "generic"
+* "utilities"
+And I should check the order because it matters.
+
+Since "base" also has body styling, I'll first try copying the site style.css as editor-style.css.
+
+Actually editor-style.css is no longer used as is by the new editor (called Gutenberg or something) - But that last comments seems to elude to a way to make it work with the new editor:
+https://github.com/Automattic/_s/issues/1248#issuecomment-640647913
 
 ## Original README for the underscore base template
 

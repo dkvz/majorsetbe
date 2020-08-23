@@ -671,6 +671,9 @@ textarea {
 	grid-area: main;
 	overflow: hidden;
 	/* Resolves issue with <pre> elements forcing full width. */
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 .widget-area {
