@@ -7,8 +7,20 @@
 		"footer footer";
 }
 
+.site-header,
+.site-main,
+.site-footer {
+	padding: 0.5rem;
+}
+
 .site-header {
 	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-branding > img {
+	height: 86px;
 }
 
 .site-main {

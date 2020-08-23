@@ -1,3 +1,11 @@
+/**
+* IMPORTANT:
+* ==========
+* I've been using _content_sidebar.scss instead of this file.
+* it's currently unused and lacking all of the layout modifications
+* I did to the other file.
+**/
+
 .site {
 	display: grid;
 	grid-template-columns: ($size__site-sidebar) auto;

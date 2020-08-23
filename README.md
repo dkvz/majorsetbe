@@ -21,8 +21,17 @@ From there you can watch for asset changes to auto-recompile the theme:
 npm run watch
 ```
 
+## Editing the styling
+The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignore. Keeping it around so the theme still works even if I forget to build the theme assets.
+
+* Most layout modifications happened in `_content-sidebar.scss`
+* We use variables for as many colors as possible - See discussion about Colors below
+* The styling is mobile first with media queries added manually when relevant (todo item to move it to a helper function or something Sassy)
+* 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
+
 ## TODO
 - [ ] Is there a symbol library included?
+- [ ] Add something to make it easier to declare the common media queries
 
 ## Discussion
 
