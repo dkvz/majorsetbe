@@ -30,7 +30,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 * 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
 
 ## TODO
-- [ ] Site logo should probably be smaller on mobile
+- [ ] Header height somehow changes on every page
+- [ ] Site logo should probably be smaller on mobile and also should link to homepage
 - [ ] Is there a symbol library included?
 - [ ] Add something to make it easier to declare the common media queries
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
@@ -38,6 +39,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Flex or grid the search widget to get consistent heihts on the input and button
 - [ ] There is a theme checker for Wordpress - Should probably use it at some point
 - [ ] Test the npm scripts on Windows
+- [ ] A **WHOLE BUNCH** of wp-block* styles need to be implemented, could probably steal them from one of the official themes
+- [ ] Test all the alignement options in the editor
 
 ## Discussion
 
@@ -81,6 +84,21 @@ Actually editor-style.css is no longer used as is by the new editor (called Gute
 https://github.com/Automattic/_s/issues/1248#issuecomment-640647913
 
 Someone over here has hacked the editor styling and documents the extra needed classes: https://florianbrinkmann.com/en/editor-styles-gutenberg-4544/
+
+Another reference for some classes that I need to add (for instance for the screen max width):
+https://rudrastyh.com/gutenberg/css.html
+
+#### My solution
+In the end I created a new scss file called "editor-styles.scss" that compiles to "editor-styles.css" at the root.
+
+Then I register it in functions.php - See this code at the end of the `major_set_be_setup()` function:
+```php
+/**
+ * Attempting to add styling to the Guntenberg editor.
+ */
+add_theme_support( 'editor-styles' );
+add_editor_style( 'editor-styles.css' );
+```
 
 ## Original README for the underscore base template
 

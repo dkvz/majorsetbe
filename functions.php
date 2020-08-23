@@ -100,6 +100,12 @@ if ( ! function_exists( 'major_set_be_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		/**
+		 * Attempting to add styling to the Guntenberg editor.
+		 */
+		add_theme_support( 'editor-styles' );
+		add_editor_style( 'editor-styles.css' );
 	}
 endif;
 add_action( 'after_setup_theme', 'major_set_be_setup' );
