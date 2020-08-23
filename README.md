@@ -30,7 +30,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 * 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
 
 ## TODO
-- [ ] Header height somehow changes on every page
+- [ ] Add sidebar in the footer
+- [ ] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [ ] Site logo should probably be smaller on mobile and also should link to homepage
 - [ ] There's apparently things we need to translate in the pot file thingy
 - [ ] Is there a symbol library included?

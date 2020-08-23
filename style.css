@@ -639,9 +639,9 @@ textarea {
 --------------------------------------------------------------*/
 .site {
 	display: grid;
-	grid-template-columns: auto 25%;
 	min-height: 100vh;
-	grid-template-areas: "header header" "main sidebar" "footer footer";
+	grid-template-columns: auto;
+	grid-template-areas: "header" "main" "footer";
 }
 
 .site-header,
@@ -694,12 +694,6 @@ textarea {
 	grid-area: footer;
 	background-color: #112f41;
 	border-top: 4px solid #f2b134;
-}
-
-.no-sidebar .site {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-areas: "header" "main" "footer";
 }
 
 /*--------------------------------------------------------------
