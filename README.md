@@ -21,6 +21,9 @@ From there you can watch for asset changes to auto-recompile the theme:
 npm run watch
 ```
 
+## To configure inside Wordpress
+* The sidebar - It appears in the footer and most probably has to be changed.
+
 ## Editing the styling
 The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignore. Keeping it around so the theme still works even if I forget to build the theme assets.
 
@@ -30,19 +33,20 @@ The "style.css" file at the project root is supposed to be generated using npm s
 * 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
 
 ## TODO
-- [ ] Add sidebar in the footer
-- [ ] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
+- [x] Add sidebar in the footer
+- [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [ ] Site logo should probably be smaller on mobile and also should link to homepage
 - [ ] There's apparently things we need to translate in the pot file thingy
 - [ ] Is there a symbol library included?
-- [ ] Add something to make it easier to declare the common media queries
+- [ ] Find fonts to use
+- [x] Add something to make it easier to declare the common media queries -> Added mixins
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
 - [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least
-- [ ] Flex or grid the search widget to get consistent heihts on the input and button
+- [x] Flex or grid the search widget to get consistent heihts on the input and button
 - [ ] There is a theme checker for Wordpress - Should probably use it at some point
 - [ ] Test the npm scripts on Windows
 - [ ] A **WHOLE BUNCH** of wp-block* styles need to be implemented, could probably steal them from one of the official themes
-- [ ] Test all the alignement options in the editor
+- [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
 
 ## Discussion
 

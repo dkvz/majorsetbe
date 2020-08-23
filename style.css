@@ -53,6 +53,9 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;*/
+/*
+Mixins for media queries
+*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -692,8 +695,14 @@ textarea {
 	margin: 0 auto;
 }
 
-.widget-area {
+/*.widget-area {
 	grid-area: sidebar;
+}*/
+@media (min-width: 1140px) {
+	.widget-area {
+		display: grid;
+		grid-template-columns: 1fr auto;
+	}
 }
 
 .site-footer {
@@ -846,7 +855,16 @@ textarea {
 
 .site-footer .widget-title {
 	color: #068587;
-	margin: 0.5rem 0;
+	margin: 0 0 0.5rem;
+}
+
+.site-footer .widget {
+	margin: 0;
+}
+
+.search-form {
+	display: flex;
+	align-items: center;
 }
 
 /* Media

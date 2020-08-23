@@ -48,8 +48,17 @@
 	@include container-sized;
 }
 
-.widget-area {
+/*.widget-area {
 	grid-area: sidebar;
+}*/
+
+.widget-area {
+
+	@include desktop {
+		display: grid;
+		grid-template-columns: 1fr auto;
+	}
+
 }
 
 .site-footer {

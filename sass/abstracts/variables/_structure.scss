@@ -1,3 +1,7 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 $size__container-max: 1140px;
+
+// Breakpoints I'm using:
+$size__tablet: 768px;
+$size__desktop: $size__container-max;
