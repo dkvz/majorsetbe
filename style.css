@@ -48,6 +48,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+/*$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -387,7 +392,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #112f41;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -422,7 +427,7 @@ address {
 }
 
 pre {
-	background: #eee;
+	background: #778582;
 	font-family: "Courier 10 Pitch", courier, monospace;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
@@ -440,13 +445,13 @@ var {
 
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted #778582;
 	cursor: help;
 }
 
 mark,
 ins {
-	background: #fff9c0;
+	background: #f2b134;
 	text-decoration: none;
 }
 
@@ -461,7 +466,7 @@ body {
 }
 
 hr {
-	background-color: #ccc;
+	background-color: #f2b134;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -518,15 +523,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #ed553b;
 }
 
 a:visited {
-	color: #800080;
+	color: #ed553b;
 }
 
 a:hover, a:focus, a:active {
-	color: #191970;
+	color: #f17e6a;
 }
 
 a:focus {
@@ -544,9 +549,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
+	border-color: #f2b134;
 	border-radius: 3px;
-	background: #e6e6e6;
+	background: #068587;
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
@@ -556,7 +561,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	border-color: #ed553b;
 }
 
 button:active, button:focus,
@@ -566,7 +571,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
+	border-color: #ed553b;
 }
 
 input[type="text"],
@@ -585,8 +590,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
+	color: #778582;
+	border: 1px solid #e9f6f3;
 	border-radius: 3px;
 	padding: 3px;
 }
@@ -607,11 +612,11 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+	color: #112f41;
 }
 
 select {
-	border: 1px solid #ccc;
+	border: 1px solid #e9f6f3;
 }
 
 textarea {
@@ -885,12 +890,12 @@ textarea {
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background-color: #e9f6f3;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	clip-path: none;
-	color: #21759b;
+	color: #112f41;
 	display: block;
 	font-size: 0.875rem;
 	font-weight: 700;

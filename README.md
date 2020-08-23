@@ -36,6 +36,11 @@ We're going dark on clear.
 - #e9f6f3 or white or gradient to white - Backgrounds - Light turquoise
 - #778582 - Grayed color/dark backgrounds - Darker turquoise - Could be computed with SASS I guess
 
+We now need to match these to the corresponding SASS variables. Pretty sure it's in `sass/abstracts/variables`.
+
+I decided to create and import a new scss files for my own color definitions, called it "_ms_colors.scss".
+
+
 ## Original README for the underscore base template
 
 _s
