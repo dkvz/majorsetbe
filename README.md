@@ -32,6 +32,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 ## TODO
 - [ ] Header height somehow changes on every page
 - [ ] Site logo should probably be smaller on mobile and also should link to homepage
+- [ ] There's apparently things we need to translate in the pot file thingy
 - [ ] Is there a symbol library included?
 - [ ] Add something to make it easier to declare the common media queries
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
@@ -99,6 +100,11 @@ Then I register it in functions.php - See this code at the end of the `major_set
 add_theme_support( 'editor-styles' );
 add_editor_style( 'editor-styles.css' );
 ```
+
+### Removing all the sidebars
+You're supposed to just remove all the sidebar widgets for that.
+
+I'm just going to somehow add it to the footer.
 
 ## Original README for the underscore base template
 
