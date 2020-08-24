@@ -54,6 +54,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] There is a theme checker for Wordpress - Should probably use it at some point
 - [ ] Test the npm scripts on Windows
 - [ ] A **WHOLE BUNCH** of wp-block* styles need to be implemented, could probably steal them from one of the official themes
+- [ ] I've seen somewhere that you're supposed to tell Gutenberg the color palette it can show to users
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
 - [ ] Minify the CSS in the prod build (is it already?)
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
