@@ -23,6 +23,10 @@ npm run watch
 
 ## To configure inside Wordpress
 * The sidebar - It appears in the footer and most probably has to be changed.
+* Change site title (in browser title bars).
+* Disallow access to xmlrpc.php at web server level - Will probably make another private note for the hosting concerns.
+
+TODO: Still discussing how to handle saving and showing upcoming and past concerts - More notes in _resources/doc.
 
 ## Editing the styling
 The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignore. Keeping it around so the theme still works even if I forget to build the theme assets.
@@ -35,10 +39,13 @@ The "style.css" file at the project root is supposed to be generated using npm s
 ## TODO
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
+- [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template.
 - [ ] Site logo should probably be smaller on mobile and also should link to homepage
 - [ ] There's apparently things we need to translate in the pot file thingy
 - [ ] Is there a symbol library included?
 - [ ] Find fonts to use
+- [ ] Change the favicon
+- [ ] Check what we get as OpenGraph metadata
 - [x] Add something to make it easier to declare the common media queries -> Added mixins
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
 - [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least
