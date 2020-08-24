@@ -43,6 +43,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Site logo should probably be smaller on mobile and also should link to homepage
 - [ ] There's apparently things we need to translate in the pot file thingy
 - [ ] Is there a symbol library included?
+- [ ] Style the "Edit" link on pages and posts when logged in, maybe put it on top? We could probably just remove it since it's on the top UI when logged in.
 - [ ] Find fonts to use
 - [ ] Change the favicon
 - [ ] Check what we get as OpenGraph metadata
@@ -54,6 +55,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Test the npm scripts on Windows
 - [ ] A **WHOLE BUNCH** of wp-block* styles need to be implemented, could probably steal them from one of the official themes
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
+- [ ] Minify the CSS in the prod build (is it already?)
+- [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
 
 ## Discussion
 

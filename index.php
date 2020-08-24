@@ -47,12 +47,23 @@ get_header();
 		?>
 
 		<h1>Prochains concerts</h1>
-		<h3>EXPERIMENTAL</h3>
 
 		<?php
+		/* We're fetching the upcoming events using the metadata.
+		* Event dates are stored as string using a format that
+		* allowed comparison: "Y-m-d H:i:s"
+		*/
 		$args = array(
 			'post_type' => 'tribe_events',
-			'posts_per_page' => 10,
+			'orderby' => '_EventStartDate', 
+			'order' => 'ASC',
+			'meta_query' => array(
+				array(
+					'key' => '_EventStartDate',
+					'value' => date('Y-m-d H:i:s'),
+					'compare' => '>=',
+				)
+			)
 		);
 		$loop = new WP_Query($args);
 		while ( $loop->have_posts() ) {
