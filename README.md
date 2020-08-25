@@ -39,7 +39,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 ## TODO
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
-- [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template.
+- [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
+- [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template
 - [ ] Site logo should probably be smaller on mobile and also should link to homepage
 - [ ] There's apparently things we need to translate in the pot file thingy
 - [ ] Is there a symbol library included?

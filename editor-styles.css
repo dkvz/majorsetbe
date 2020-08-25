@@ -557,9 +557,18 @@ big {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.menu {
+	height: 100%;
+}
+
 .main-navigation {
 	display: block;
 	/*width: 100%;*/
+	/*.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}*/
 }
 
 .main-navigation ul {
@@ -567,44 +576,69 @@ big {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
-}
+	/*ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
 
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
+			ul {
+				left: -999em;
+				top: 0;
+			}
 
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
+			li {
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	display: block;
-	left: auto;
-}
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
+				}
+			}
 
-.main-navigation ul ul a {
-	width: 200px;
-}
+			a {
+				width: 200px;
+			}
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}*/
+	/*li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}*/
 }
 
 .main-navigation li {
-	position: relative;
+	/*position: relative;*/
+	/*&:hover > a,
+		&.focus > a {
+		}*/
+	margin-left: 0.3rem;
+	margin-bottom: 0.3rem;
 }
 
 .main-navigation a {
-	display: block;
+	color: #e9f6f3;
 	text-decoration: none;
+	font-size: 1.1rem;
+	display: block;
+	padding: 0.5rem;
+	background-color: rgba(6, 133, 135, 0.2);
+	border: 1px solid transparent;
+	transition: all 0.7s;
+}
+
+.main-navigation a:hover, .main-navigation a:active {
+	border: 1px solid #ed553b;
+	background-color: rgba(180, 180, 180, 0.2);
 }
 
 /* Small menu. */
@@ -613,12 +647,17 @@ big {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
 		display: flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: end;
+		align-items: center;
+		height: 100%;
 	}
 }
 
