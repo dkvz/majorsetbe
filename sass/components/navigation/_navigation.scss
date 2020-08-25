@@ -76,7 +76,7 @@
 		&:hover,
 		&:active {
 			border: 1px solid $color__ms-accent-2;
-			background-color: rgba(180,180,180,0.2);
+			background-color: transparentize($color__ms-title-1, 0.6);
 		}
 	}
 
