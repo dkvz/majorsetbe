@@ -721,7 +721,35 @@ textarea {
 	height: 100%;
 }
 
+/* The menu button */
+.menu-toggle {
+	color: #e9f6f3;
+	text-decoration: none;
+	font-size: 1.1rem;
+	display: block;
+	padding: 0.5rem;
+	background-color: rgba(6, 133, 135, 0.2);
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all 0.7s;
+}
+
+.menu-toggle:hover, .menu-toggle:active {
+	border: 1px solid #ed553b;
+	background-color: rgba(6, 133, 135, 0.4);
+}
+
+.menu-toggle:focus {
+	outline: 1px solid #f2b134;
+}
+
 .main-navigation {
+	position: fixed;
+	top: 130px;
+	right: 0;
+	height: auto;
+	background-color: #112f41;
+	box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.4);
 	display: block;
 	/*width: 100%;*/
 	/*.current_page_item > a,
@@ -736,6 +764,9 @@ textarea {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	flex-direction: column;
+	justify-content: start;
+	align-items: stretch;
 	/*ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -793,6 +824,7 @@ textarea {
 	padding: 0.5rem;
 	background-color: rgba(6, 133, 135, 0.2);
 	border: 1px solid transparent;
+	cursor: pointer;
 	transition: all 0.7s;
 }
 
@@ -801,8 +833,12 @@ textarea {
 	background-color: rgba(6, 133, 135, 0.4);
 }
 
+.main-navigation a:focus {
+	outline: 1px solid #f2b134;
+}
+
 /* Small menu. */
-.menu-toggle,
+/*.menu-toggle,*/
 .main-navigation.toggled ul {
 	display: block;
 }
@@ -811,9 +847,14 @@ textarea {
 	.menu-toggle {
 		display: none;
 	}
+	.main-navigation {
+		position: static;
+		height: initial;
+		box-shadow: none;
+	}
 	.main-navigation ul {
 		display: flex;
-		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: end;
 		align-items: center;

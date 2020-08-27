@@ -12,7 +12,9 @@
 		return;
 	}
 
-	const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+	// I had to change the selector here because I moved the menu button oustide:
+	//const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+	const button = document.querySelector( '.menu-toggle' );
 
 	// Return early if the button don't exist.
 	if ( 'undefined' === typeof button ) {
@@ -44,7 +46,9 @@
 
 	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
 	document.addEventListener( 'click', function( event ) {
-		const isClickInside = siteNavigation.contains( event.target );
+		// Had to add an extra check because I have my menu button outside of the nav thingy:
+		const isClickInside = siteNavigation.contains( event.target ) || 
+			event.target.classList.contains('menu-toggle');
 
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );

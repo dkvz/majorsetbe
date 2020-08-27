@@ -16,6 +16,28 @@
 	margin: 0 auto;
 }
 
+@mixin nav-button {
+	color: $color__ms-background-2;
+	text-decoration: none;
+	font-size: 1.1rem;
+	display: block;
+	padding: 0.5rem;
+	background-color: transparentize($color__ms-title-1, 0.8);
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all 0.7s;
+
+	&:hover,
+	&:active {
+		border: 1px solid $color__ms-accent-2;
+		background-color: transparentize($color__ms-title-1, 0.6);
+	}
+
+	&:focus {
+		outline: 1px solid $color__ms-accent-1;
+	}
+}
+
 /*
 Mixins for media queries
 */
