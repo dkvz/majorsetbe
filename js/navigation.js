@@ -48,7 +48,8 @@
 	document.addEventListener( 'click', function( event ) {
 		// Had to add an extra check because I have my menu button outside of the nav thingy:
 		const isClickInside = siteNavigation.contains( event.target ) || 
-			event.target.classList.contains('menu-toggle');
+			event.target.classList.contains('menu-toggle') ||
+			button.contains( event.target );
 
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );

@@ -52,7 +52,14 @@
 				<?php endif;  */ ?>
 			</div><!-- .site-branding -->
 
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'major_set_be' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<svg class="menu-btn__icon" viewBox="0 0 7 7" height="32">
+					<rect class="line-1" y="0" width="7" height="1"></rect>
+					<rect class="line-2" y="3" width="7" height="1"></rect>
+					<rect class="line-3" y="6" width="7" height="1"></rect>
+				</svg>
+				<?php //esc_html_e( 'Menu', 'major_set_be' ); ?>
+			</button>
 
 			<nav id="site-navigation" class="main-navigation">
 				

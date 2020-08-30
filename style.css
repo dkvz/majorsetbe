@@ -723,6 +723,7 @@ textarea {
 
 /* The menu button */
 .menu-toggle {
+	align-self: center;
 	color: #e9f6f3;
 	text-decoration: none;
 	font-size: 1.1rem;
@@ -741,6 +742,10 @@ textarea {
 
 .menu-toggle:focus {
 	outline: 1px solid #f2b134;
+}
+
+.menu-toggle > svg {
+	fill: #112f41;
 }
 
 .main-navigation {

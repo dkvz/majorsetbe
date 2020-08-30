@@ -4,7 +4,12 @@
 
 /* The menu button */
 .menu-toggle {
+	align-self: center;
 	@include nav-button;
+}
+
+.menu-toggle > svg {
+	fill: $color__ms-primary;
 }
 
 .main-navigation {
