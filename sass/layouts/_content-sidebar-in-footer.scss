@@ -17,11 +17,19 @@
 }
 
 .site-header {
-	grid-area: header;	
-	background-color: $color__ms-primary;
+	grid-area: header;
 	box-shadow: $shadow__bottom;
+	background-color: $color__ms-primary;
 	display: flex;
 	align-items: center;
+
+	/*@include tablet {
+		background-image: url('assets/new-h-bg.svg');
+		background-repeat: no-repeat;
+		background-position: 900px center;
+		background-size: auto 400px;
+	}*/
+
 }
 
 .header-wrapper {

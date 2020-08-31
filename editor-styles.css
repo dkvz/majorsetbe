@@ -615,6 +615,7 @@ big {
 		position: static;
 		height: initial;
 		box-shadow: none;
+		background-color: transparent;
 	}
 }
 
