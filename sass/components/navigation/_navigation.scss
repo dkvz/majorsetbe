@@ -6,6 +6,10 @@
 .menu-toggle {
 	align-self: center;
 	@include nav-button;
+
+	@include tablet {
+		display: none;
+	}
 }
 
 .menu-toggle > svg {
@@ -23,6 +27,12 @@
 	display: block;
 	/*width: 100%;*/
 
+	@include tablet {
+		position: static;
+		height: initial;
+		box-shadow: none;
+	}
+
 	ul {
 		display: none;
 		list-style: none;
@@ -32,6 +42,15 @@
 		flex-direction: column;
 		justify-content: start;
 		align-items: stretch;
+
+		@include tablet {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: end;
+			align-items: center;
+			height: 100%;
+		}
 
 		/*ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -76,7 +95,6 @@
 
 	li {
 		/*position: relative;*/
-
 		/*&:hover > a,
 		&.focus > a {
 		}*/
@@ -95,32 +113,8 @@
 	}*/
 }
 
-/* Small menu. */
-/*.menu-toggle,*/
 .main-navigation.toggled ul {
 	display: block;
-}
-
-@media screen and (min-width: $size__tablet) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation {
-		position: static;
-		height: initial;
-		box-shadow: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: end;
-		align-items: center;
-		height: 100%;
-	}
 }
 
 .comment-navigation,

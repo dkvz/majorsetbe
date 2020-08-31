@@ -37,7 +37,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 * 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
 
 ## TODO
-- [ ] Style the mobile menu button and remove the margins for li elements unless we're on larger screen - add a padding (which we'll need to remove on large screens) - Actually, use the mixins for responsiveness in _navigation.scss
+- [ ] Style the mobile menu button and remove the margins for li elements unless we're on larger screen - add a padding (which we'll need to remove on large screens).
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
