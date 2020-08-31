@@ -13,12 +13,13 @@
 }
 
 .menu-toggle > svg {
-	fill: $color__ms-primary;
+	//fill: $color__ms-primary;
+	fill: $color__ms-background-2;
 }
 
 .main-navigation {
 	position: fixed;
-	top: 130px;
+	top: 105px;
 	right: 0;
 	height: auto;
 	background-color: $color__ms-primary;
@@ -50,6 +51,23 @@
 			justify-content: end;
 			align-items: center;
 			height: 100%;
+		}
+
+		li {
+			/*position: relative;*/
+			/*&:hover > a,
+			&.focus > a {
+			}*/
+			margin: 0.3rem;
+
+			@include tablet {
+				padding: 0;
+				margin: 0rem 0rem 0.3rem 0.3rem;
+			}
+		}
+
+		a {
+			@include nav-button;
 		}
 
 		/*ul {
@@ -93,24 +111,16 @@
 		}*/
 	}
 
-	li {
-		/*position: relative;*/
-		/*&:hover > a,
-		&.focus > a {
-		}*/
-		margin-left: 0.3rem;
-		margin-bottom: 0.3rem;
-	}
-
-	a {
-		@include nav-button;
-	}
-
 	/*.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}*/
+}
+
+// Make it lower when the admin bar is enabled:
+body.admin-bar .main-navigation {
+	top: 150px;
 }
 
 .main-navigation.toggled ul {

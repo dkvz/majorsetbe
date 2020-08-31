@@ -591,12 +591,12 @@ big {
 }
 
 .menu-toggle > svg {
-	fill: #112f41;
+	fill: #e9f6f3;
 }
 
 .main-navigation {
 	position: fixed;
-	top: 130px;
+	top: 105px;
 	right: 0;
 	height: auto;
 	background-color: #112f41;
@@ -677,16 +677,22 @@ big {
 	}
 }
 
-.main-navigation li {
+.main-navigation ul li {
 	/*position: relative;*/
 	/*&:hover > a,
-		&.focus > a {
-		}*/
-	margin-left: 0.3rem;
-	margin-bottom: 0.3rem;
+			&.focus > a {
+			}*/
+	margin: 0.3rem;
 }
 
-.main-navigation a {
+@media (min-width: 768px) {
+	.main-navigation ul li {
+		padding: 0;
+		margin: 0rem 0rem 0.3rem 0.3rem;
+	}
+}
+
+.main-navigation ul a {
 	color: #e9f6f3;
 	text-decoration: none;
 	font-size: 1.1rem;
@@ -698,13 +704,17 @@ big {
 	transition: all 0.7s;
 }
 
-.main-navigation a:hover, .main-navigation a:active {
+.main-navigation ul a:hover, .main-navigation ul a:active {
 	border: 1px solid #ed553b;
 	background-color: rgba(6, 133, 135, 0.4);
 }
 
-.main-navigation a:focus {
+.main-navigation ul a:focus {
 	outline: 1px solid #f2b134;
+}
+
+body.admin-bar .main-navigation {
+	top: 150px;
 }
 
 .main-navigation.toggled ul {
