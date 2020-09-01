@@ -664,6 +664,7 @@ textarea {
 	grid-area: header;
 	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
 	background-color: #112f41;
+	background: linear-gradient(90deg, #112f41 0%, #068587 85%, rgba(17, 47, 65, 0.7) 100%);
 	display: flex;
 	align-items: center;
 	/*@include tablet {

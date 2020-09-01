@@ -20,6 +20,7 @@
 	grid-area: header;
 	box-shadow: $shadow__bottom;
 	background-color: $color__ms-primary;
+	background: linear-gradient(90deg, $color__ms-primary 0%, $color__ms-title-1 85%, transparentize($color__ms-primary, 0.3) 100%);
 	display: flex;
 	align-items: center;
 
