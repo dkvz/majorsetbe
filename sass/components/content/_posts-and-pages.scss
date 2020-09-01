@@ -1,11 +1,50 @@
 .hero-wrapper {
-	position: relative;
 	width: 100%;
 	min-height: calc(100vh - #{$size__site-header});
-	background-image: url(assets/logo.png);
+	background-image: url(assets/logo-notext.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
+}
+
+.hero-title {
+	font-size: 3.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: $color__ms-accent-2;
+	display: inline-block;
+	background-color: transparentize($color__ms-background-2, 0.9);
+	padding: 0.4rem 1rem;
+	border-bottom: solid 6px $color__ms-accent-1;
+	@include center-flex-mixin;
+}
+
+.hero-cta {
+	display: flex;
+	justify-content: space-around;
+}
+
+.hero-cta a {
+	@include bare-button;
+	min-width: 150px;
+	color: $color__ms-background-1;
+	font-size: 1.12rem;
+	text-align: center;
+	font-weight: bold;
+	border: 2px solid $color__ms-accent-2;
+	background-color: transparentize($color__ms-primary, 0.2);
+	border-radius: 5px;
+	text-transform: uppercase;
+
+	&:hover,
+	&:active {
+		border-color: $color__ms-accent-1;
+		background-color: $color__ms-primary;
+	}
+
+	&:focus {
+		outline: 1px solid $color__ms-accent-1;
+	}
 }
 
 /*.hero-img {

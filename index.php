@@ -19,7 +19,11 @@ get_header();
 
 		<section class="hero-wrapper flex-center">
 			<div class="hero">
-				<h1>Major Set</h1>
+				<h1 class="hero-title"><span>Major Set:</span> <span>The Band</span></h1>
+				<div class="hero-cta">
+					<a href="#">Prochains concerts</a>
+					<a href="#">Engagez-nous!</a>
+				</div>
 			</div>
 		</section>
 

@@ -16,17 +16,21 @@
 	margin: 0 auto;
 }
 
-@mixin nav-button {
-	color: $color__ms-background-2;
+@mixin bare-button {
 	text-decoration: none;
-	font-size: 1.1rem;
-	display: block;
 	padding: 0.5rem;
-	background-color: transparentize($color__ms-title-1, 0.8);
+	display: block;
 	border: 1px solid transparent;
 	cursor: pointer;
 	transition: all 0.7s;
+	font-size: 1.1rem;
+}
 
+@mixin nav-button {
+	@include bare-button;
+	color: $color__ms-background-2;
+	background-color: transparentize($color__ms-title-1, 0.8);
+	
 	&:hover,
 	&:active {
 		border: 1px solid $color__ms-accent-2;
@@ -36,6 +40,13 @@
 	&:focus {
 		outline: 1px solid $color__ms-accent-1;
 	}
+}
+
+@mixin center-flex-mixin {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /*

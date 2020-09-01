@@ -476,6 +476,7 @@ big {
 --------------------------------------------- */
 body {
 	background: #fff;
+	background: linear-gradient(#112f41 0%, #fff 20%);
 }
 
 hr {
@@ -732,15 +733,15 @@ textarea {
 /* The menu button */
 .menu-toggle {
 	align-self: center;
-	color: #e9f6f3;
 	text-decoration: none;
-	font-size: 1.1rem;
-	display: block;
 	padding: 0.5rem;
-	background-color: rgba(6, 133, 135, 0.2);
+	display: block;
 	border: 1px solid transparent;
 	cursor: pointer;
 	transition: all 0.7s;
+	font-size: 1.1rem;
+	color: #e9f6f3;
+	background-color: rgba(6, 133, 135, 0.2);
 }
 
 .menu-toggle:hover, .menu-toggle:active {
@@ -862,15 +863,15 @@ textarea {
 }
 
 .main-navigation ul a {
-	color: #e9f6f3;
 	text-decoration: none;
-	font-size: 1.1rem;
-	display: block;
 	padding: 0.5rem;
-	background-color: rgba(6, 133, 135, 0.2);
+	display: block;
 	border: 1px solid transparent;
 	cursor: pointer;
 	transition: all 0.7s;
+	font-size: 1.1rem;
+	color: #e9f6f3;
+	background-color: rgba(6, 133, 135, 0.2);
 }
 
 .main-navigation ul a:hover, .main-navigation ul a:active {
@@ -918,13 +919,60 @@ body.admin-bar .main-navigation {
 /* Posts and pages
 --------------------------------------------- */
 .hero-wrapper {
-	position: relative;
 	width: 100%;
 	min-height: calc(100vh - 135px);
-	background-image: url(assets/logo.png);
+	background-image: url(assets/logo-notext.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
+}
+
+.hero-title {
+	font-size: 3.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: #ed553b;
+	display: inline-block;
+	background-color: rgba(233, 246, 243, 0.1);
+	padding: 0.4rem 1rem;
+	border-bottom: solid 6px #f2b134;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-cta {
+	display: flex;
+	justify-content: space-around;
+}
+
+.hero-cta a {
+	text-decoration: none;
+	padding: 0.5rem;
+	display: block;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all 0.7s;
+	font-size: 1.1rem;
+	min-width: 150px;
+	color: #fff;
+	font-size: 1.12rem;
+	text-align: center;
+	font-weight: bold;
+	border: 2px solid #ed553b;
+	background-color: rgba(17, 47, 65, 0.8);
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.hero-cta a:hover, .hero-cta a:active {
+	border-color: #f2b134;
+	background-color: #112f41;
+}
+
+.hero-cta a:focus {
+	outline: 1px solid #f2b134;
 }
 
 /*.hero-img {
