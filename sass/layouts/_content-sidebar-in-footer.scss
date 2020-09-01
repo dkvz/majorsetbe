@@ -20,16 +20,14 @@
 	grid-area: header;
 	box-shadow: $shadow__bottom;
 	background-color: $color__ms-primary;
-	background: linear-gradient(90deg, $color__ms-primary 0%, $color__ms-title-1 85%, transparentize($color__ms-primary, 0.3) 100%);
+	background: linear-gradient(90deg, $color__ms-primary 20%, transparentize($color__ms-primary, 0.1) 100%);
 	display: flex;
 	align-items: center;
+	height: $size__site-header;
 
-	/*@include tablet {
-		background-image: url('assets/new-h-bg.svg');
-		background-repeat: no-repeat;
-		background-position: 900px center;
-		background-size: auto 400px;
-	}*/
+	@include tablet {
+		background: linear-gradient(90deg, $color__ms-primary 0%, $color__ms-title-1 85%, $color__ms-primary 100%);
+	}
 
 }
 

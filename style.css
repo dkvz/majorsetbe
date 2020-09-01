@@ -664,15 +664,16 @@ textarea {
 	grid-area: header;
 	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
 	background-color: #112f41;
-	background: linear-gradient(90deg, #112f41 0%, #068587 85%, rgba(17, 47, 65, 0.7) 100%);
+	background: linear-gradient(90deg, #112f41 20%, rgba(17, 47, 65, 0.9) 100%);
 	display: flex;
 	align-items: center;
-	/*@include tablet {
-		background-image: url('assets/new-h-bg.svg');
-		background-repeat: no-repeat;
-		background-position: 900px center;
-		background-size: auto 400px;
-	}*/
+	height: 135px;
+}
+
+@media (min-width: 768px) {
+	.site-header {
+		background: linear-gradient(90deg, #112f41 0%, #068587 85%, #112f41 100%);
+	}
 }
 
 .header-wrapper {
@@ -916,6 +917,25 @@ body.admin-bar .main-navigation {
 
 /* Posts and pages
 --------------------------------------------- */
+.hero-wrapper {
+	position: relative;
+	width: 100%;
+	min-height: calc(100vh - 135px);
+	background-image: url(assets/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+/*.hero-img {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}*/
 .sticky {
 	display: block;
 }
@@ -1151,6 +1171,13 @@ body.admin-bar .main-navigation {
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
+}
+
+.flex-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

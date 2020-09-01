@@ -749,6 +749,25 @@ body.admin-bar .main-navigation {
 
 /* Posts and pages
 --------------------------------------------- */
+.hero-wrapper {
+	position: relative;
+	width: 100%;
+	min-height: calc(100vh - 135px);
+	background-image: url(assets/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+/*.hero-img {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}*/
 .sticky {
 	display: block;
 }
@@ -971,6 +990,13 @@ body.admin-bar .main-navigation {
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
+}
+
+.flex-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /*# sourceMappingURL=editor-styles.css.map */

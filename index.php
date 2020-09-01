@@ -15,7 +15,13 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main flex-center">
+
+		<section class="hero-wrapper flex-center">
+			<div class="hero">
+				<h1>Major Set</h1>
+			</div>
+		</section>
 
 		<?php
 		/*
