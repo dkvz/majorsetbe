@@ -20,6 +20,7 @@
 .main-navigation {
 	position: fixed;
 	top: 105px;
+	z-index: 999;
 	right: 0;
 	height: auto;
 	background-color: $color__ms-primary;

@@ -21,7 +21,7 @@ get_header();
 			<div class="hero">
 				<h1 class="hero-title"><span>Major Set:</span> <span>The Band</span></h1>
 				<div class="hero-cta">
-					<a href="#">Prochains concerts</a>
+					<a href="#upcomingEvents">Prochains concerts</a>
 					<a href="#">Engagez-nous!</a>
 				</div>
 			</div>
@@ -56,7 +56,7 @@ get_header();
 		*/
 		?>
 
-		<h1>Prochains concerts</h1>
+		<h1 id="upcomingEvents">Prochains concerts</h1>
 
 		<?php
 		/* We're fetching the upcoming events using the metadata.
