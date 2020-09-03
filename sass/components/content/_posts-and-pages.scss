@@ -7,6 +7,14 @@
 	background-position: center center;
 }
 
+body.admin-bar .hero-wrapper {
+	min-height: calc(100vh - #{$size__site-header} - #{$size__admin-bar-small});
+
+	@include tablet {
+		min-height: calc(100vh - #{$size__site-header} - #{$size__admin-bar-large});
+	}
+}
+
 .hero-title {
 	font-size: 3.5rem;
 	text-align: center;
@@ -14,19 +22,25 @@
 	color: $color__ms-accent-2;
 	display: inline-block;
 	background-color: transparentize($color__ms-background-2, 0.9);
-	padding: 0.4rem 1rem;
+	padding: 0.4rem;
 	border-bottom: solid 6px $color__ms-accent-1;
 	@include center-flex-mixin;
+
+	@include tablet {
+		flex-direction: row;
+	}
 }
 
 .hero-cta {
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 0.75rem;
 }
 
 .hero-cta a {
 	@include bare-button;
 	min-width: 150px;
+	padding: 0.6rem;
 	color: $color__ms-background-1;
 	font-size: 1.12rem;
 	text-align: center;
@@ -35,6 +49,7 @@
 	background-color: transparentize($color__ms-primary, 0.2);
 	border-radius: 5px;
 	text-transform: uppercase;
+	@include center-flex-mixin;
 
 	&:hover,
 	&:active {

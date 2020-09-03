@@ -3,6 +3,10 @@ $size__site-sidebar: 25%;
 $size__container-max: 1140px;
 
 $size__site-header: 135px;
+// Height of the admin bar on small screens:
+$size__admin-bar-small: 46px;
+// Height of the admin bar on larger screens:
+$size__admin-bar-large: 32px;
 
 // Breakpoints I'm using:
 $size__tablet: 768px;

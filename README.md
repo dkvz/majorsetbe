@@ -124,6 +124,23 @@ You're supposed to just remove all the sidebar widgets for that.
 
 I'm just going to somehow add it to the footer.
 
+### The admin bar at the top is ruining the layout
+I'm using selective styles for when the admin bar is present.
+
+It adds a class to body when it is.
+
+Styles like that one work (provided specificity has precedence):
+```css
+body.admin-bar .main-navigation {
+	top: 150px;
+}
+```
+
+For size references, the top bar appears to be 32px tall on larger screens, and 46px tall on mobile.
+
+I'm going to create a variable in `_structure.scss` called `$size__admin-bar-small` and `$size__admin-bar-large` to hold the values.
+
+
 ## Original README for the underscore base template
 
 _s
