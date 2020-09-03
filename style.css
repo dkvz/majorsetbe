@@ -541,7 +541,7 @@ big {
 --------------------------------------------- */
 body {
 	background: #fff;
-	background: linear-gradient(#112f41 0%, #fff 20%);
+	background: linear-gradient(#112f41 0%, #fff 50vh);
 }
 
 hr {
@@ -991,11 +991,22 @@ body.admin-bar .main-navigation {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 @media (min-width: 768px) {
 	.hero-wrapper {
 		background-size: 600px;
+	}
+}
+
+@media (min-width: 1140px) {
+	.hero-wrapper {
+		background-position: left center;
+		align-items: end;
 	}
 }
 
@@ -1013,6 +1024,8 @@ body.admin-bar .hero-wrapper {
 	font-family: "Signika", sans-serif;
 	font-size: 3.5rem;
 	text-align: center;
+	margin-top: 0;
+	margin-bottom: 1.8rem;
 	font-weight: bold;
 	color: #fff;
 	text-shadow: -2px -2px 4px #ed553b;

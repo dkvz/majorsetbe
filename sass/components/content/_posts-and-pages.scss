@@ -5,9 +5,15 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
+	@include center-flex-mixin;
 
 	@include tablet {
 		background-size: 600px;
+	}
+
+	@include desktop {
+		background-position: left center;
+		align-items: end;
 	}
 }
 
@@ -23,6 +29,8 @@ body.admin-bar .hero-wrapper {
 	font-family: $font__special;
 	font-size: 3.5rem;
 	text-align: center;
+	margin-top: 0;
+	margin-bottom: 1.8rem;
 	font-weight: bold;
 	color: $color__ms-background-1;
 	text-shadow: -2px -2px 4px $color__ms-accent-2;
