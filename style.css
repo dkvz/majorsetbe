@@ -987,7 +987,7 @@ body.admin-bar .main-navigation {
 .hero-wrapper {
 	width: 100%;
 	min-height: calc(100vh - 135px);
-	background-image: url(assets/logo-notext.png);
+	background-image: url(assets/logo-picture.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
