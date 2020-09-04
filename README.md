@@ -21,6 +21,8 @@ From there you can watch for asset changes to auto-recompile the theme:
 npm run watch
 ```
 
+The theme won't work unless watch or "compile:css" is ran since the output CSS files are not included in the repo.
+
 ## To configure inside Wordpress
 * The sidebar - It appears in the footer and most probably has to be changed.
 * Change site title (in browser title bars).
@@ -29,7 +31,7 @@ npm run watch
 TODO: Still discussing how to handle saving and showing upcoming and past concerts - More notes in _resources/doc.
 
 ## Editing the styling
-The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignore. Keeping it around so the theme still works even if I forget to build the theme assets.
+The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignor (**THEY NOW ARE**). Keeping it around so the theme still works even if I forget to build the theme assets.
 
 * Most layout modifications happened in `_content-sidebar.scss`
 * We use variables for as many colors as possible - See discussion about Colors below

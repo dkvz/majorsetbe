@@ -7,13 +7,18 @@ h6 {
 	clear: both;
 }
 
-.editor-post-title__block,
+//.editor-post-title__block,
 .editor-post-title__input,
 .entry-title {
-	font-family: $font__main;
+	font-family: $font__special;
 	display: inline-block;
-	padding-bottom: 1rem;
+	padding: 0.2rem 0.4rem 1rem 0.4rem;
 	border-bottom: 4px solid $color__ms-accent-1;
 	text-align: center;
+	color: darken($color__ms-title-2, 10%);
+	background-color: transparentize($color__ms-background-2, 0.9);
 }
 
+.editor-post-title__input {
+	text-align: left;
+}

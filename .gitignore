@@ -2,3 +2,7 @@ node_modules
 .cache
 vendor
 var
+editor-styles.css
+editor-styles.css.map
+styles.css
+styles.css.map
