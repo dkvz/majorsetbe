@@ -56,33 +56,45 @@ get_header();
 		*/
 		?>
 
-		<h1 id="upcomingEvents">Prochains concerts</h1>
+		<section class="main-section">
 
-		<?php
-		/* We're fetching the upcoming events using the metadata.
-		* Event dates are stored as string using a format that
-		* allowed comparison: "Y-m-d H:i:s"
-		*/
-		$args = array(
-			'post_type' => 'tribe_events',
-			'orderby' => '_EventStartDate', 
-			'order' => 'ASC',
-			'meta_query' => array(
-				array(
-					'key' => '_EventStartDate',
-					'value' => date('Y-m-d H:i:s'),
-					'compare' => '>=',
+			<h1 id="upcomingEvents">Prochains concerts</h1>
+
+			<?php
+			/* We're fetching the upcoming events using the metadata.
+			* Event dates are stored as string using a format that
+			* allowed comparison: "Y-m-d H:i:s"
+			*/
+			
+			/*
+			We could actually use a function called tribe_get_events(), it
+			just works: https://theeventscalendar.com/knowledgebase/k/using-tribe_get_events/
+			Should be in a try catch in case events calendar is not installed to show
+			some kind of meaningful error in that case.
+			*/
+			$args = array(
+				'post_type' => 'tribe_events',
+				'orderby' => '_EventStartDate', 
+				'order' => 'ASC',
+				'meta_query' => array(
+					array(
+						'key' => '_EventStartDate',
+						'value' => date('Y-m-d H:i:s'),
+						'compare' => '>=',
+					)
 				)
-			)
-		);
-		$loop = new WP_Query($args);
-		while ( $loop->have_posts() ) {
-				$loop->the_post();
-				get_template_part( 'template-parts/content', get_post_type() );
-				?>
-		<?php
-		}
-		?>
+			);
+			$loop = new WP_Query($args);
+			while ( $loop->have_posts() ) {
+					$loop->the_post();
+					//get_template_part( 'template-parts/content', get_post_type() );
+					get_template_part( 'template-parts/event-card' );
+					?>
+			<?php
+			}
+			?>
+
+		</section>
 
 	</main><!-- #main -->
 

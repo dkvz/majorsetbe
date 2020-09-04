@@ -1,0 +1,239 @@
+WP_Post Object
+(
+    [ID] => 21
+    [post_author] => 1
+    [post_date] => 2020-08-24 11:11:56
+    [post_date_gmt] => 2020-08-24 09:11:56
+    [post_content] => 
+
+Contenu texte du truc
+
+    [post_title] => Un vieux concert
+    [post_excerpt] => Ce sera supair
+    [post_status] => publish
+    [comment_status] => open
+    [ping_status] => closed
+    [post_password] => 
+    [post_name] => un-vieux-concert
+    [to_ping] => 
+    [pinged] => 
+    [post_modified] => 2020-09-03 17:48:08
+    [post_modified_gmt] => 2020-09-03 15:48:08
+    [post_content_filtered] => 
+    [post_parent] => 0
+    [guid] => http://localhost:8080/?post_type=tribe_events&p=21
+    [menu_order] => 0
+    [post_type] => tribe_events
+    [post_mime_type] => 
+    [comment_count] => 0
+    [filter] => raw
+    [start_date] => 2020-10-14 15:30:00
+    [start_date_utc] => 2020-10-14 13:30:00
+    [end_date] => 2020-10-14 17:00:00
+    [end_date_utc] => 2020-10-14 15:00:00
+    [dates] => stdClass Object
+        (
+            [start] => Tribe\Utils\Date_I18n_Immutable Object
+                (
+                    [date] => 2020-10-14 15:30:00.000000
+                    [timezone_type] => 3
+                    [timezone] => Europe/Brussels
+                )
+
+            [start_utc] => Tribe\Utils\Date_I18n_Immutable Object
+                (
+                    [date] => 2020-10-14 13:30:00.000000
+                    [timezone_type] => 3
+                    [timezone] => UTC
+                )
+
+            [start_site] => Tribe\Utils\Date_I18n_Immutable Object
+                (
+                    [date] => 2020-10-14 15:30:00.000000
+                    [timezone_type] => 3
+                    [timezone] => Europe/Brussels
+                )
+
+            [start_display] => Tribe\Utils\Date_I18n_Immutable Object
+                (
+                    [date] => 2020-10-14 15:30:00.000000
+                    [timezone_type] => 3
+                    [timezone] => Europe/Brussels
+                )
+
+            [end] => Tribe\Utils\Date_I18n_Immutable Object
+                (
+                    [date] => 2020-10-14 17:00:00.000000
+                    [timezone_type] => 3
+                    [timezone] => Europe/Brussels
+                )
+
+            [end_utc] => Tribe\Utils\Date_I18n_Immutable Object
+                (
+                    [date] => 2020-10-14 15:00:00.000000
+                    [timezone_type] => 3
+                    [timezone] => UTC
+                )
+
+            [end_site] => Tribe\Utils\Date_I18n_Immutable Object
+                (
+                    [date] => 2020-10-14 17:00:00.000000
+                    [timezone_type] => 3
+                    [timezone] => Europe/Brussels
+                )
+
+            [end_display] => Tribe\Utils\Date_I18n_Immutable Object
+                (
+                    [date] => 2020-10-14 17:00:00.000000
+                    [timezone_type] => 3
+                    [timezone] => Europe/Brussels
+                )
+
+        )
+
+    [timezone] => Europe/Brussels
+    [duration] => 32400
+    [multiday] => 
+    [is_past] => 
+    [all_day] => 
+    [starts_this_week] => 
+    [ends_this_week] => 
+    [this_week_duration] => 
+    [happens_this_week] => 
+    [displays_on] => Array
+        (
+        )
+
+    [featured] => 
+    [sticky] => 
+    [cost] => 
+    [excerpt] => Tribe\Utils\Lazy_String Object
+        (
+            [string:protected] => 
+            [value_callback:protected] => Closure Object
+                (
+                    [static] => Array
+                        (
+                            [post_id] => 21
+                        )
+
+                )
+
+            [escape_callback:protected] => 
+            [escaped:protected] => 
+            [lazy_resolve_callback:protected] => 
+        )
+
+    [organizers] => Tribe\Utils\Lazy_Collection Object
+        (
+            [callback:protected] => Closure Object
+                (
+                    [static] => Array
+                        (
+                            [event] => 21
+                        )
+
+                )
+
+            [items:protected] => 
+            [items_index:protected] => 0
+            [lazy_resolve_callback:protected] => 
+        )
+
+    [venues] => Tribe\Events\Collections\Lazy_Post_Collection Object
+        (
+            [unserialize_callback:protected] => tribe_get_venue_object
+            [callback:protected] => Closure Object
+                (
+                    [static] => Array
+                        (
+                            [event] => 21
+                        )
+
+                )
+
+            [items:protected] => 
+            [items_index:protected] => 0
+            [lazy_resolve_callback:protected] => 
+        )
+
+    [thumbnail] => Tribe\Utils\Post_Thumbnail Object
+        (
+            [image_sizes:protected] => 
+            [post_id:protected] => 21
+            [data:protected] => 
+            [exists:protected] => 
+            [thumbnail_id:protected] => 
+            [lazy_resolve_callback:protected] => 
+        )
+
+    [permalink] => Tribe\Utils\Lazy_String Object
+        (
+            [string:protected] => 
+            [value_callback:protected] => Closure Object
+                (
+                    [static] => Array
+                        (
+                            [post_id] => 21
+                        )
+
+                )
+
+            [escape_callback:protected] => 
+            [escaped:protected] => 
+            [lazy_resolve_callback:protected] => 
+        )
+
+    [schedule_details] => Tribe\Utils\Lazy_String Object
+        (
+            [string:protected] => 
+            [value_callback:protected] => Closure Object
+                (
+                    [static] => Array
+                        (
+                            [post_id] => 21
+                        )
+
+                )
+
+            [escape_callback:protected] => 
+            [escaped:protected] => 
+            [lazy_resolve_callback:protected] => 
+        )
+
+    [plain_schedule_details] => Tribe\Utils\Lazy_String Object
+        (
+            [string:protected] => 
+            [value_callback:protected] => Closure Object
+                (
+                    [static] => Array
+                        (
+                            [post_id] => 21
+                        )
+
+                )
+
+            [escape_callback:protected] => 
+            [escaped:protected] => 
+            [lazy_resolve_callback:protected] => 
+        )
+
+    [title] => Tribe\Utils\Lazy_String Object
+        (
+            [string:protected] => 
+            [value_callback:protected] => Closure Object
+                (
+                    [static] => Array
+                        (
+                            [post_id] => 21
+                        )
+
+                )
+
+            [escape_callback:protected] => 
+            [escaped:protected] => 
+            [lazy_resolve_callback:protected] => 
+        )
+
+)
+   

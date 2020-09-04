@@ -45,7 +45,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
 - [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template
 - [ ] Site logo should probably be smaller on mobile and also should link to homepage
-- [ ] There's apparently things we need to translate in the pot file thingy
+- [ ] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know
 - [ ] Is there a symbol library included?
 - [ ] Style the "Edit" link on pages and posts when logged in, maybe put it on top? We could probably just remove it since it's on the top UI when logged in.
 - [ ] Find fonts to use
