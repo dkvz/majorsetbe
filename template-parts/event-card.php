@@ -29,6 +29,11 @@ $event = tribe_get_event( get_the_ID() );
 	<?php major_set_be_post_thumbnail(); ?>
 
 	<div class="entry-content">
+		
+		<?php 
+		echo tribe_events_event_schedule_details(null, '<h2>', '</h2>'); 
+		?>
+		
     <pre>
     <?php print_r($event); ?>
     </pre>
