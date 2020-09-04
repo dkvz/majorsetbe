@@ -39,13 +39,16 @@
 	margin: 0 auto;
 }
 
-.site-branding > img,
-.site-branding > svg {
+.site-branding > a {
+	display: block;
+}
+
+.branding-logo {
 	display: block;
 	height: 120px;
 }
 
-.site-branding > svg {
+svg.branding-logo {
 	fill: $color__ms-background-1;
 }
 
