@@ -7,25 +7,25 @@
  * @package Major_Set_Be
  */
 
-$event = tribe_get_event( get_the_ID() );
+// Can get all the event data like so:
+//$event = tribe_get_event( get_the_ID() );
 
-// DO I ACTUALLY NEED THAT $event VARIABLE?
+// This used to show a "Leave a Comment" link:
+//major_set_be_entry_footer(); 
+// Keeping it here just in case.
 
 ?>
 
 <article class="event-card" id="post-<?php the_ID(); ?>">
 	<header>
 		<?php
-		if ( is_singular() ) :
 			the_title( '<h1>', '</h1>' );
-		else :
-			the_title( '<h1><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
-		endif; ?>
+		?>
     <!-- .entry-meta -->
 		<div class="event-schedule">
-			<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/calendar-alt.svg" alt="Icône de calendrier" />
+			<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/calendar-alt-red.svg" alt="Icône de calendrier" />
 			<?php 
-				echo tribe_events_event_schedule_details(null, '<h2>', '</h2>'); 
+				echo ucfirst(tribe_events_event_schedule_details(null, '<h2>', '</h2>')); 
 			?>
 		</div>
 	</header><!-- .entry-header -->
@@ -45,13 +45,18 @@ $event = tribe_get_event( get_the_ID() );
 					<span><?php echo $cost; ?></span>
 				</div>
 			<?php endif; ?>
-			
+
 			<?php the_excerpt(); ?>
 
 		</div>
 	</div><!-- .entry-content -->
 
-	<footer class="event-card-footer">
-		<?php major_set_be_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<?php if ( !is_singular() ) : ?>
+		<footer class="event-card-footer">
+			<a href="<?php echo esc_url( get_permalink() ); ?>" class="btn">
+				Afficher les détails...
+			</a>
+		</footer>
+	<?php endif; ?><!-- .entry-footer -->
+	
 </article><!-- #post-<?php the_ID(); ?> -->

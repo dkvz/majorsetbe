@@ -39,6 +39,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 * 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
 
 ## TODO
+- [ ] Show some message in case there aren't any upcoming concerts (with a CTA to something?)
 - [x] Style the mobile menu button and remove the margins for li elements unless we're on larger screen - add a padding (which we'll need to remove on large screens).
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
@@ -46,14 +47,13 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template
 - [ ] Site logo should probably be smaller on mobile and also should link to homepage
 - [ ] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know
-- [ ] Is there a symbol library included?
 - [ ] Style the "Edit" link on pages and posts when logged in, maybe put it on top? We could probably just remove it since it's on the top UI when logged in.
 - [ ] Find fonts to use
 - [ ] Change the favicon
 - [ ] Check what we get as OpenGraph metadata
 - [x] Add something to make it easier to declare the common media queries -> Added mixins
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
-- [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least
+- [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least - Try fixing the SCSS lint errors
 - [x] Flex or grid the search widget to get consistent heihts on the input and button
 - [ ] There is a theme checker for Wordpress - Should probably use it at some point
 - [ ] Test the npm scripts on Windows

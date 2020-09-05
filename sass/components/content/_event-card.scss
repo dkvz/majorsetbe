@@ -1,5 +1,5 @@
 .event-card {
-  border: 4px solid $color__ms-accent-1;
+  border: 4px solid $color__ms-primary;
   margin-bottom: 2rem;
   box-shadow: $shadow__card;
   text-align: initial;
@@ -21,6 +21,7 @@
 
     h1 {
       font-size: 1.65rem;
+      color: $color__ms-accent-2;
 
       @include tablet {
         font-size: 1.8rem;
@@ -30,18 +31,14 @@
   }
 
   .icon {
-    height: 32px;
+    height: 28px;
   }
 }
 
 .event-schedule {
   @include icon-and-text;
-  color: $color__ms-background-2;
+  color: $color__ms-grayed;
   font-size: 0.65rem;
-
-  h2 {
-    text-transform: capitalize;
-  }
 
   @include tablet {
     font-size: 0.8rem;
@@ -69,4 +66,8 @@
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   border-bottom: 1px solid transparentize($color__ms-grayed, 0.6);
+}
+
+.event-card-footer {
+  text-align: center;
 }
