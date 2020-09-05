@@ -9,37 +9,49 @@
 
 $event = tribe_get_event( get_the_ID() );
 
+// DO I ACTUALLY NEED THAT $event VARIABLE?
+
 ?>
 
-<article id="post-<?php the_ID(); ?>">
-	<header class="entry-header">
+<article class="event-card" id="post-<?php the_ID(); ?>">
+	<header>
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1>', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h1><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 		endif; ?>
-
-		
     <!-- .entry-meta -->
-		
-    
+		<div class="event-schedule">
+			<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/calendar-alt.svg" alt="Icône de calendrier" />
+			<?php 
+				echo tribe_events_event_schedule_details(null, '<h2>', '</h2>'); 
+			?>
+		</div>
 	</header><!-- .entry-header -->
 
-	<?php major_set_be_post_thumbnail(); ?>
+	<div class="event-card-content">
+		<?php major_set_be_post_thumbnail(); ?>
+		<div class="event-content">
+			<?php if ( tribe_has_venue() ): ?>
+				<div class="event-meta">
+					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/map-marker-alt.svg" alt="Icône marqueur emplacement" />
+					<span><?php echo tribe_get_venue(); ?></span>
+				</div>
+			<?php endif; ?>
+			<?php if ( $cost = tribe_get_cost() ): ?>
+				<div class="event-meta">
+					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/euro-sign.svg" alt="Icône Euro" />
+					<span><?php echo $cost; ?></span>
+				</div>
+			<?php endif; ?>
+			
+			<?php the_excerpt(); ?>
 
-	<div class="entry-content">
-		
-		<?php 
-		echo tribe_events_event_schedule_details(null, '<h2>', '</h2>'); 
-		?>
-		
-    <pre>
-    <?php print_r($event); ?>
-    </pre>
+		</div>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="event-card-footer">
 		<?php major_set_be_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

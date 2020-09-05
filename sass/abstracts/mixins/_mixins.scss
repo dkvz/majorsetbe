@@ -49,6 +49,16 @@
 	justify-content: center;
 }
 
+@mixin icon-and-text {
+	display: flex;
+	align-items: center;
+	
+	& > img,
+	& > svg {
+		margin-right: 0.4rem;
+	}
+}
+
 /*
 Mixins for media queries
 */

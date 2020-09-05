@@ -78,6 +78,8 @@ body.admin-bar .hero-wrapper {
 
 .main-section {
 	width: 100%;
+	max-width: $size__tablet;
+	text-align: center;
 }
 
 /*.hero-img {

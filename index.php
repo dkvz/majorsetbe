@@ -58,7 +58,7 @@ get_header();
 
 		<section class="main-section">
 
-			<h1 id="upcomingEvents">Prochains concerts</h1>
+			<h1 class="entry-title" id="upcomingEvents">Prochains concerts</h1>
 
 			<?php
 			/* We're fetching the upcoming events using the metadata.
