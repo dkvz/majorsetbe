@@ -85,11 +85,19 @@ get_header();
 				)
 			);
 			$loop = new WP_Query($args);
-			while ( $loop->have_posts() ) {
+			if ( $loop->have_posts() ) {
+				while ( $loop->have_posts() ) {
 					$loop->the_post();
 					//get_template_part( 'template-parts/content', get_post_type() );
 					get_template_part( 'template-parts/event-card' );
-					?>
+				}
+			} else {
+			?>
+
+				<div class="info-card">
+					Aucune représentation prévue pour l'instant
+				</div>
+
 			<?php
 			}
 			?>

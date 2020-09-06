@@ -39,13 +39,13 @@ The "style.css" file at the project root is supposed to be generated using npm s
 * 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
 
 ## TODO
-- [ ] Show some message in case there aren't any upcoming concerts (with a CTA to something?)
+- [x] Show some message in case there aren't any upcoming concerts (with a CTA to something?)
 - [x] Style the mobile menu button and remove the margins for li elements unless we're on larger screen - add a padding (which we'll need to remove on large screens).
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
 - [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template
-- [ ] Site logo should probably be smaller on mobile and also should link to homepage
+- [x] Site logo should probably be smaller on mobile and also should link to homepage -> I'll keep it large for now
 - [ ] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know
 - [ ] Style the "Edit" link on pages and posts when logged in, maybe put it on top? We could probably just remove it since it's on the top UI when logged in.
 - [ ] Find fonts to use
@@ -62,6 +62,9 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
 - [ ] Minify the CSS in the prod build (is it already?)
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
+
+## Resources and links
+* Doc for Event Calendar custom functions (use the search thingy): https://docs.theeventscalendar.com
 
 ## Discussion
 
