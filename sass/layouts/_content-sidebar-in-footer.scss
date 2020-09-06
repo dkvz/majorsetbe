@@ -10,6 +10,7 @@
 }
 
 .site-header,
+.site > main,
 .site-main,
 .site-footer,
 .widget-area {
@@ -52,6 +53,7 @@ svg.branding-logo {
 	fill: $color__ms-background-1;
 }
 
+.site > main,
 .site-main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */

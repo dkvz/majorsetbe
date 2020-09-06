@@ -4,8 +4,8 @@
   box-shadow: $shadow__card;
   text-align: initial;
 
-  .event-card-content,
   .event-card-footer,
+  .event-content,
   header {
     padding: 0.6rem;
   }
@@ -46,13 +46,18 @@
 }
 
 .event-card-content {
-  border-top: 2px solid $color__ms-accent-1;
-  border-bottom: 2px solid $color__ms-accent-1;
+  border-top: 2px solid $color__ms-primary;
+  border-bottom: 2px solid $color__ms-primary;
   display: flex;
   flex-direction: column;
 
-  @include tablet {
-    flex-direction: row;
+  a.post-thumbnail {
+    display: block;
+    align-self: center;
+  }
+
+  a.post-thumbnail > * {
+    display: block;
   }
 }
 

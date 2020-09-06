@@ -1,0 +1,8 @@
+/*
+I applied a global setting to the main tag when direct child of .site
+so the following is no longer necessary:
+.tribe-events-pg-template {
+  width: 100%;
+}*/
+
+/*# sourceMappingURL=event-calendar.css.map */
