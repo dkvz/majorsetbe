@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "event-calendar.css",
-	"sources": [
-		"../../sass/plugins/event-calendar/event-calendar.scss"
-	],
-	"names": [],
-	"mappings": "AAAA;;;;;GAKG"
-}
