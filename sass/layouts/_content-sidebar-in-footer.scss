@@ -12,7 +12,7 @@
 .site-header,
 .site > main,
 .site-main,
-.site-footer,
+.content-area,
 .widget-area {
 	padding: 0.5rem;
 }
@@ -75,7 +75,14 @@ svg.branding-logo {
 
 .site-footer {
 	grid-area: footer;
+	padding: 0;
 	background-color: $color__ms-primary;
 	color: $color__ms-background-2;
+	border-top: 4px solid $color__ms-accent-1;
+}
+
+.site-info {
+	color: $color__ms-grayed;
+	background-color: lighten($color__ms-primary, 2.5%);
 	border-top: 4px solid $color__ms-accent-1;
 }

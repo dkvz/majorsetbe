@@ -44,10 +44,12 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
-- [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template
+- [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template (can use them for events but they look kinda weird)
 - [x] Site logo should probably be smaller on mobile and also should link to homepage -> I'll keep it large for now
-- [ ] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know
+- [x] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know -> See discussion section
+- [ ] Try to get the pagination to show (by adding tons of posts?) to see what style it gets - Pretty sure it won't get any
 - [ ] Style the "Edit" link on pages and posts when logged in, maybe put it on top? We could probably just remove it since it's on the top UI when logged in.
+- [ ] The error message when you try submitting an empty comment isn't styled at all. Is that normal?
 - [ ] Find fonts to use
 - [ ] Change the favicon
 - [ ] Check what we get as OpenGraph metadata

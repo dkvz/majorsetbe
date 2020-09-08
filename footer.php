@@ -12,12 +12,14 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="container">
+		<div class="container content-area">
 			<?php get_sidebar(); ?>
-			<div class="site-info">
-				Copyright truc machin
-			</div><!-- .site-info -->
 		</div>
+		<div class="site-info content-area">
+			<div class="container">
+				Copyright 2020 © Major Set
+			</div>
+		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
