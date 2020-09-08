@@ -145,6 +145,21 @@ For size references, the top bar appears to be 32px tall on larger screens, and 
 
 I'm going to create a variable in `_structure.scss` called `$size__admin-bar-small` and `$size__admin-bar-large` to hold the values.
 
+### Translating the existing strings
+I first had to create an up to date .pot file using `composer make-pot`.
+
+It searches through what I assume is ALL your files, and generates a .pot file in /languages.
+
+Copy that file into `fr_FR.po` and `fr_BE.po` (yes, the extension has to be .po).
+
+Now we need to run some obscure process to compile they key values into something binary. Don't ask me why.
+
+People seem to use some utility called POEdit for this, but the following command could also work:
+```
+msgcat fr_FR.po | msgfmt -o fr_FR.mo -
+```
+
+The mo files get picked up immediately by Wordpress. In my case it's working as expected.
 
 ## Original README for the underscore base template
 
