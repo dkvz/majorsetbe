@@ -10,3 +10,30 @@
   background-color: transparentize($color__ms-primary, 0.72);
   padding: 2rem;
 }
+
+.tribe-events-single-event-title,
+.single-tribe_events .tribe-events-single-event-title {
+  @include main-title;
+  margin-bottom: 1rem;
+}
+
+.tribe-events-schedule,
+.single-tribe_events .tribe-events-schedule {
+  background-color: transparent;
+  border: 1px solid $color__ms-grayed;
+  text-align: center;
+  padding: 1rem;
+  background: radial-gradient(transparent, transparentize($color__ms-primary, 0.7));
+  background-repeat: no-repeat;
+}
+
+.tribe-events-schedule__datetime,
+.tribe-events-schedule__datetime > * {
+  color: $color__ms-primary;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
