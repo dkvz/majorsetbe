@@ -1,0 +1,12 @@
+.tribe-events-back {
+  display: none;
+}
+
+.tribe-events-ajax-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%), translateY(-50%);
+  background-color: transparentize($color__ms-primary, 0.72);
+  padding: 2rem;
+}
