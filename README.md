@@ -43,6 +43,9 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style the mobile menu button and remove the margins for li elements unless we're on larger screen - add a padding (which we'll need to remove on large screens).
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
+- [ ] In event cards, the descriptions does not show carriage returns
+- [ ] Style the blue info message "This event is passed"
+- [ ] I need a different style for .tribe-events-schedule when there are no thumbnails for the event ans screen is large
 - [ ] Event cards could use some kind of radial gradient
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
 - [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template (can use them for events but they look kinda weird)

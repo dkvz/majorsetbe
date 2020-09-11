@@ -42,6 +42,22 @@
 	}
 }
 
+@mixin dark-button {
+	@include bare-button;
+	color: $color__ms-background-2;
+	background-color: $color__ms-primary;
+
+	&:hover,
+	&:active {
+		border: 1px solid $color__ms-accent-2;
+		background-color: lighten($color__ms-primary, 5%);
+	}
+
+	&:focus {
+		outline: 1px solid $color__ms-accent-1;
+	}
+}
+
 @mixin center-flex-mixin {
 	display: flex;
 	flex-direction: column;
