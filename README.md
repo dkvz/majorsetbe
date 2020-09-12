@@ -43,18 +43,19 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style the mobile menu button and remove the margins for li elements unless we're on larger screen - add a padding (which we'll need to remove on large screens).
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
-- [ ] In event cards, the descriptions does not show carriage returns
+- [ ] Need to completely style the event list and calendar pages (monthly and daily view) - Calendar had a hover style that has a bottom border
+- [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt?
 - [ ] Style the blue info message "This event is passed"
-- [ ] I need a different style for .tribe-events-schedule when there are no thumbnails for the event ans screen is large
+- [ ] I need a different style for .tribe-events-schedule when there are no thumbnails for the event and screen is large
 - [ ] Event cards could use some kind of radial gradient
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
 - [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template (can use them for events but they look kinda weird)
 - [x] Site logo should probably be smaller on mobile and also should link to homepage -> I'll keep it large for now
 - [x] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know -> See discussion section
 - [ ] Try to get the pagination to show (by adding tons of posts?) to see what style it gets - Pretty sure it won't get any
-- [ ] Style the "Edit" link on pages and posts when logged in, maybe put it on top? We could probably just remove it since it's on the top UI when logged in.
+- [x] Style the "Edit" link on pages and posts when logged in
 - [ ] The error message when you try submitting an empty comment isn't styled at all. Is that normal?
-- [ ] Find fonts to use
+- [ ] Find fonts to use -> My default Mint 20 sans-serif one is nice
 - [ ] Change the favicon
 - [ ] Check what we get as OpenGraph metadata
 - [x] Add something to make it easier to declare the common media queries -> Added mixins

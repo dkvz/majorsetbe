@@ -135,6 +135,7 @@ body.admin-bar .hero-wrapper {
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .page-title {
@@ -143,4 +144,8 @@ body.admin-bar .hero-wrapper {
 	@include tablet {
 		font-size: 2.85rem;
 	}
+}
+
+.post-edit-link {
+	@include dark-button;
 }

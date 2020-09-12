@@ -16,6 +16,7 @@ After the plugin installation, go to plugin settings in the admin.
   * Default currency symbol: €
   * Time zone mode: Use the site-wide time zone everywhere
 * Display
+  * Use the "bare styles" - Called "Styles de maquette" in French, it's the first option in Display - This gets rid of many of their custom styles so there's less work for us to override everything
   * Compact Date Format: set the right format, e.g. 15/01/2020
 
 ### Installing the fr translations

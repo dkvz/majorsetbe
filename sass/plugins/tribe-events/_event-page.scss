@@ -6,9 +6,14 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%), translateY(-50%);
-  background-color: transparentize($color__ms-primary, 0.72);
+  transform: translate(-50%, -50%);
+  background-color: transparentize($color__ms-primary, 0.6);
+  z-index: 999;
   padding: 2rem;
+}
+
+.tribe-events-spinner-medium {
+  margin: 0;
 }
 
 .tribe-events-single-event-title,
@@ -26,7 +31,6 @@
   padding: 1rem;
   margin-bottom: 0;
   background: radial-gradient(transparent, transparentize($color__ms-primary, 0.7));
-  background-repeat: no-repeat;
 }
 
 .tribe-events-schedule__datetime,
@@ -52,12 +56,21 @@
   }
 }
 
+.tribe-block__event-price .tribe-block__event-price__cost,
+.tribe-block__event-price .tribe-block__event-price__description,
+.tribe-block__organizer__details h3,
+.tribe-block__venue__name {
+  color: $color__ms-accent-2;
+}
+
 .tribe-block__events-link {
   //display: flex;
   //justify-content: space-between;
   display: grid;
   column-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.5rem;
+  text-align: center;
 
   .tribe-block__btn--link a {
     @include dark-button;
@@ -68,10 +81,8 @@
 }
 
 #tribe-events-footer {
-  &::before,
-  &::after {
-    display: none;
-  }
+
+  margin-top: 2rem;
 
   li {
     width: initial !important;
@@ -81,6 +92,12 @@
     display: grid;
     column-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+
+    li {
+      margin: 0 !important;
+      padding: 0;
+    }
 
     li a {
       @include dark-button;
@@ -90,15 +107,15 @@
   }
 }
 
-/*.tribe-block__events-link,
+.tribe-block__events-link,
 #tribe-events-footer .tribe-events-sub-nav {
 
   @include tablet {
-    column-gap: 3rem;
+    column-gap: 180px;
   }
 
   @include desktop {
     column-gap: 30%;
   }
 
-}*/
+}
