@@ -56,6 +56,10 @@
   }
 }
 
+.tribe-events-notices {
+  @include info-card(1.1rem, 0.5rem, 1rem);
+}
+
 .tribe-block__event-price .tribe-block__event-price__cost,
 .tribe-block__event-price .tribe-block__event-price__description,
 .tribe-block__organizer__details h3,

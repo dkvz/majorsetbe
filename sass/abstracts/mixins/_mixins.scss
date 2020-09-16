@@ -92,6 +92,15 @@
 	}
 }
 
+@mixin info-card($font-size: 1.5rem, $padding: 2rem, $margin-bottom: 2rem) {
+	background-color: transparentize($color__ms-primary, 0.9);
+	color: $color__ms-title-1;
+	font-size: $font-size;
+	text-align: center;
+	padding: $padding;
+	margin-bottom: $margin-bottom;
+}
+
 /*
 Mixins for media queries
 */
