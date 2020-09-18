@@ -45,7 +45,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [ ] Need to completely style the event list and calendar pages (monthly and daily view) - Calendar had a hover style that has a bottom border
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt?
-- [ ] Style the blue info message "This event is passed"
+- [x] Style the blue info message "This event is passed"
 - [ ] I need a different style for .tribe-events-schedule when there are no thumbnails for the event and screen is large
 - [ ] Event cards could use some kind of radial gradient
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
