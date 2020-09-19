@@ -27,6 +27,7 @@ The theme won't work unless watch or "compile:css" is ran since the output CSS f
 * The sidebar - It appears in the footer and most probably has to be changed.
 * Change site title (in browser title bars).
 * Disallow access to xmlrpc.php at web server level - Will probably make another private note for the hosting concerns.
+* Configure/create the menu - Add the "Représentations" link with either "?post_type=tribe_events" or "/events/list" as URL depending on rewriting being on or off.
 
 TODO: Still discussing how to handle saving and showing upcoming and past concerts - More notes in _resources/doc.
 
@@ -44,6 +45,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Add sidebar in the footer
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [ ] Need to completely style the event list and calendar pages (monthly and daily view) - Calendar had a hover style that has a bottom border
+- [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look it there's already something like "show on home page"
+- [ ] The menu has links on top now?
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt?
 - [x] Style the blue info message "This event is passed"
 - [ ] I need a different style for .tribe-events-schedule when there are no thumbnails for the event and screen is large

@@ -1,0 +1,18 @@
+.tribe-events .tribe-events-header__events-bar {
+  background-color: $color__ms-background-2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.tribe-events-c-search {
+  align-items: stretch !important;
+}
+
+.tribe-common-c-btn.tribe-events-c-search__button {
+  margin-left: 1rem;
+}
+
+.tribe-events .tribe-events-c-view-selector__content,
+.tribe-events .tribe-events-c-events-bar__search-filters-container {
+  background-color: $color__ms-background-2;
+}
