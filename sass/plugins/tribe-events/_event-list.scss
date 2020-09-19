@@ -1,18 +1,87 @@
-.tribe-events .tribe-events-header__events-bar {
+.tribe-events .tribe-events-header {
+  padding: 0.6rem;
+  margin: 0 0 1rem 0;
   background-color: $color__ms-background-2;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  border: 2px solid $color__ms-accent-1;
+
+  @include tablet {
+    border: none;
+  }
 }
 
-.tribe-events-c-search {
+.tribe-events .tribe-events-header__events-bar {
+  background-color: $color__ms-background-2;
+  
+  @include tablet {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: $shadow__card;
+  }
+}
+
+.tribe-events-c-search,
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar {
   align-items: stretch !important;
 }
 
-.tribe-common-c-btn.tribe-events-c-search__button {
+.tribe-common-c-btn.tribe-events-c-search__button,
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group {
   margin-left: 1rem;
 }
 
 .tribe-events .tribe-events-c-view-selector__content,
 .tribe-events .tribe-events-c-events-bar__search-filters-container {
   background-color: $color__ms-background-2;
+}
+
+.tribe-events .tribe-events-c-top-bar__datepicker-button,
+.tribe-common-c-btn-icon,
+.tribe-common a.tribe-common-c-btn-icon,
+a.tribe-common-c-btn-border.tribe-events-c-top-bar__today-button {
+  @include dark-button;
+  height: 100%;
+}
+
+.tribe-events .tribe-events-c-events-bar__search-button,
+.tribe-events .tribe-events-c-view-selector__button {
+  @include nav-button;
+}
+
+.tribe-common button {
+  padding: 0.3rem;
+}
+
+.tribe-events .tribe-events-c-view-selector {
+  width: initial;
+}
+
+.tribe-events .tribe-events-c-top-bar__nav-list {
+  align-items: center;
+}
+
+.tribe-events .tribe-events-calendar-list__month-separator-text {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+
+  @include tablet {
+    font-size: 2.4rem;
+  }
+}
+
+.tribe-events .tribe-events-calendar-list__event-date-tag {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin-right: 2rem;
+}
+
+.tribe-events .tribe-events-calendar-list__event-row {
+  border-bottom: 4px solid $color__ms-accent-1;
+  padding-bottom: 1rem;
+  margin-top: 0 !important;
+}
+
+.tribe-events .tribe-events-calendar-list__month-separator + .tribe-events-calendar-list__event-row {
+  border-top: 4px solid $color__ms-accent-1;
+  padding-top: 1rem;
+  margin-bottom: 1rem !important;
 }
