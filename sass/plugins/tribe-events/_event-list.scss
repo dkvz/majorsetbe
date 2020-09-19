@@ -1,3 +1,9 @@
+/*
+* Should've used more nesting in here,
+* .tribe-common--breakpoint-medium.tribe-events comes
+* back a few times.
+*/
+
 .tribe-events .tribe-events-header {
   padding: 0.6rem;
   margin: 0 0 1rem 0;
@@ -37,13 +43,17 @@
 .tribe-events .tribe-events-c-top-bar__datepicker-button,
 .tribe-common-c-btn-icon,
 .tribe-common a.tribe-common-c-btn-icon,
-a.tribe-common-c-btn-border.tribe-events-c-top-bar__today-button {
+a.tribe-common-c-btn-border.tribe-events-c-top-bar__today-button,
+.tribe-events .tribe-events-c-nav__prev,
+.tribe-events .tribe-events-c-nav__next,
+a.tribe-events-c-nav__today {
   @include dark-button;
   height: 100%;
 }
 
 .tribe-events .tribe-events-c-events-bar__search-button,
-.tribe-events .tribe-events-c-view-selector__button {
+.tribe-events .tribe-events-c-view-selector__button,
+.tribe-common button[disabled] {
   @include nav-button;
 }
 
@@ -62,6 +72,7 @@ a.tribe-common-c-btn-border.tribe-events-c-top-bar__today-button {
 .tribe-events .tribe-events-calendar-list__month-separator-text {
   font-size: 2.2rem;
   text-transform: capitalize;
+  margin-bottom: 1rem;
 
   @include tablet {
     font-size: 2.4rem;
@@ -72,16 +83,76 @@ a.tribe-common-c-btn-border.tribe-events-c-top-bar__today-button {
   font-size: 1.3rem;
   text-transform: capitalize;
   margin-right: 2rem;
+
+  @include tablet {
+    font-size: 1.8rem;
+  }
 }
 
 .tribe-events .tribe-events-calendar-list__event-row {
   border-bottom: 4px solid $color__ms-accent-1;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .tribe-events .tribe-events-calendar-list__month-separator + .tribe-events-calendar-list__event-row {
   border-top: 4px solid $color__ms-accent-1;
   padding-top: 1rem;
-  margin-bottom: 1rem !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-featured-image-wrapper {
+  margin-bottom: 1rem;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+  padding-bottom: 2rem;
+}
+
+/*** MONTH VIEW ***/
+
+.tribe-events .tribe-events-calendar-month__header-column-title {
+  text-transform: capitalize;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__day {
+  border: 1px solid $color__ms-title-1;
+
+  &:hover {
+    border-bottom: 4px solid $color__ms-accent-2;
+  }
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__body {
+  border: 1px solid $color__ms-title-1;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__week {
+  border: none;
+}
+
+.tribe-events-calendar-month__day-date-daynum a,
+.tribe-events .tribe-events-c-view-selector__list-item-link {
+  text-decoration: none;
+}
+
+.tribe-events .tribe-events-calendar-month__day-cell--mobile {
+  background-color: $color__ms-background-2;
+  color: $color__ms-primary;
+}
+
+/*** DAY VIEW ***/
+.tribe-events .tribe-events-calendar-day__time-separator-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-day__event:last-child {
+  margin: 0;
+}
+
+.tribe-common .tribe-events-calendar-day {
+  padding-bottom: 1rem;
+  border-bottom: 4px solid $color__ms-accent-1;
 }
