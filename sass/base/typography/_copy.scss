@@ -9,8 +9,34 @@ i {
 	font-style: italic;
 }
 
-blockquote {
+/*blockquote {
 	margin: 0 1.5em;
+}*/
+
+blockquote {
+	position: relative;
+	background: transparentize($color__ms-primary, 0.4);
+	color: $color__ms-background-2;
+  border-left: 8px solid $color__ms-accent-2;
+	padding: 10px 10px 10px 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	quotes: "\201C""\201D""\2018""\2019";
+	line-height: 1.7;
+
+	p {
+		margin-top: 0.4rem;
+		margin-bottom: 0.4rem;
+	}
+}
+
+blockquote::before{
+  content: "\201C";
+  color: $color__ms-accent-2;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -8px;
 }
 
 address {
