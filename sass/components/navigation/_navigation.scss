@@ -17,6 +17,10 @@
 	fill: $color__ms-background-2;
 }
 
+.main-navigation > div {
+	height: 100%;
+}
+
 .main-navigation {
 	position: fixed;
 	top: 105px;

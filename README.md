@@ -48,8 +48,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Need to style the day view for event list
 - [ ] Try using a picture as background + a blend mode for pages and maybe event pages 
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look it there's already something like "show on home page"
-- [ ] The menu has links on top now?
-- [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt?
+- [x] The menu has links on top now? -> Creating a menu changed the header dom
+- [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? We might keep it like so
 - [x] Style the blue info message "This event is passed"
 - [x] I need a different style for .tribe-events-schedule when there are no thumbnails for the event and screen is large
 - [ ] Event cards could use some kind of radial gradient
@@ -72,7 +72,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] A **WHOLE BUNCH** of wp-block* styles need to be implemented, could probably steal them from one of the official themes
 - [ ] I've seen somewhere that you're supposed to tell Gutenberg the color palette it can show to users
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
-- [ ] Minify the CSS in the prod build (is it already?)
+- [ ] Minify the CSS in the prod build (is it already (don't think so)?)
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
 
 ## Resources and links
