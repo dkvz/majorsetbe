@@ -67,7 +67,7 @@
 
 .event-meta {
   @include icon-and-text;
-  font-weight: bold;
+  font-weight: 700;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   border-bottom: 1px solid transparentize($color__ms-grayed, 0.6);
