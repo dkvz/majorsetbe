@@ -48,6 +48,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Need to style the day view for event list
 - [ ] Try using a picture as background + a blend mode for pages and maybe event pages 
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look it there's already something like "show on home page"
+- [ ] Tablets could have some more padding in content zones, mobile could use slightly more too
 - [x] The menu has links on top now? -> Creating a menu changed the header dom
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? We might keep it like so
 - [x] Style the blue info message "This event is passed"

@@ -1,0 +1,9 @@
+.wpforms-container .wpforms-field-row.wpforms-field-medium,
+.wpforms-container input.wpforms-field-medium {
+  max-width: 100%;
+
+  @include desktop {
+    max-width: 60%;
+  }
+}
+

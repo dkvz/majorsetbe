@@ -12,4 +12,6 @@ I then use Gutenberg to manually add a small description on top of the page.
 **YOU SHOULD OBVIOUSLY TEST THE FORM**
 
 ## Styling
-I'm going to put the styling for wp-forms alongside the other input and form related styling, so I'm not creating a new folder in "plugins".
+- Go into WP Forms settings, and enable only "base styles".
+
+-> I then created a new folder and style file in sass/plugins.

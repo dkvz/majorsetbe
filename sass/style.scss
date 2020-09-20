@@ -98,6 +98,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "plugins/tribe-events/event-page";
 @import "plugins/tribe-events/event-list";
 
+/* Extra styles on top of the WPForms plugin basic styles */
+@import "plugins/wpforms/wp-forms";
+
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
