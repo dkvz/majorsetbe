@@ -45,24 +45,23 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [x] Need to completely style the event list and calendar pages (monthly and daily view) - Calendar had a hover style that has a bottom border
 - [x] Need to style the day view for event list
-- [ ] Home page hero doesn't work at all on Chrome. Gotta try adding the "Pinned news" section anyway
+- [x] Home page hero doesn't work at all on Chrome. -> Had to use flex-end instead of just end for the align-items
 - [ ] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
 - [ ] Links inside of blockquote should have another color
-- [ ] Test if the blog page also shows unpublished articles, it might do because of the custom query
+- [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
 - [ ] "Lettrines" aint lookin good
 - [ ] Try using a picture as background + a blend mode for pages and maybe event pages 
-- [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look it there's already something like "show on home page"
+- [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
 - [ ] Tablets could have some more padding in content zones, mobile could use slightly more too
 - [x] The menu has links on top now? -> Creating a menu changed the header dom
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? We might keep it like so
 - [x] Style the blue info message "This event is passed"
 - [x] I need a different style for .tribe-events-schedule when there are no thumbnails for the event and screen is large
-- [ ] Event cards could use some kind of radial gradient
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
 - [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template (can use them for events but they look kinda weird)
 - [x] Site logo should probably be smaller on mobile and also should link to homepage -> I'll keep it large for now
 - [x] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know -> See discussion section
-- [ ] Try to get the pagination to show (by adding tons of posts?) to see what style it gets - Pretty sure it won't get any
+- [x] Try to get the pagination to show (by adding tons of posts?) to see what style it gets -> Added pagination manually on the "blog.php" page
 - [x] Style the "Edit" link on pages and posts when logged in
 - [ ] The error message when you try submitting an empty comment isn't styled at all. Is that normal?
 - [ ] Find fonts to use -> My default Mint 20 sans-serif one is nice
