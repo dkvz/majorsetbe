@@ -29,8 +29,6 @@ The theme won't work unless watch or "compile:css" is ran since the output CSS f
 * Disallow access to xmlrpc.php at web server level - Will probably make another private note for the hosting concerns.
 * Configure/create the menu - Add the "Représentations" link with either "?post_type=tribe_events" or "/events/list" as URL depending on rewriting being on or off.
 
-TODO: Still discussing how to handle saving and showing upcoming and past concerts - More notes in _resources/doc.
-
 ## Editing the styling
 The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignor (**THEY NOW ARE**). Keeping it around so the theme still works even if I forget to build the theme assets.
 
