@@ -28,6 +28,7 @@ The theme won't work unless watch or "compile:css" is ran since the output CSS f
 * Change site title (in browser title bars).
 * Disallow access to xmlrpc.php at web server level - Will probably make another private note for the hosting concerns.
 * Configure/create the menu - Add the "Représentations" link with either "?post_type=tribe_events" or "/events/list" as URL depending on rewriting being on or off.
+* Create the "Blog" page (or "News" or whatever) and select "Blog section" as the page template. Put that page in the menu too.
 
 ## Editing the styling
 The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignor (**THEY NOW ARE**). Keeping it around so the theme still works even if I forget to build the theme assets.
@@ -44,6 +45,11 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Header height somehow changes on every page -> I need some sort of flex 1 equivalent on the main area
 - [x] Need to completely style the event list and calendar pages (monthly and daily view) - Calendar had a hover style that has a bottom border
 - [x] Need to style the day view for event list
+- [ ] Home page hero doesn't work at all on Chrome. Gotta try adding the "Pinned news" section anyway
+- [ ] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
+- [ ] Links inside of blockquote should have another color
+- [ ] Test if the blog page also shows unpublished articles, it might do because of the custom query
+- [ ] "Lettrines" aint lookin good
 - [ ] Try using a picture as background + a blend mode for pages and maybe event pages 
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look it there's already something like "show on home page"
 - [ ] Tablets could have some more padding in content zones, mobile could use slightly more too
