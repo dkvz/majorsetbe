@@ -48,14 +48,16 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Need to style the day view for event list
 - [x] Home page hero doesn't work at all on Chrome. -> Had to use flex-end instead of just end for the align-items
 - [x] Pagination doesn't really work on the blog page, seems like the same posts appear on both pages
+- [ ] Try using a picture as background + a blend mode for pages and maybe event pages 
 - [ ] Style individual post pages + the comment form (does it affect the standard page template too?) + thumbnails
+- [ ] Remove the "web site" field from the comments form
+- [ ] Maybe use a page layout with an actual page container?
 - [x] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
-- [ ] Add a permalink icon ton post-card.php (next to the title) so that people can link a specific post even without the "read more" link
+- [x] Add a permalink icon ton post-card.php (next to the title) so that people can link a specific post even without the "read more" link
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post.
 - [ ] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
 - [ ] "Lettrines" aint lookin good
-- [ ] Try using a picture as background + a blend mode for pages and maybe event pages 
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
 - [ ] Tablets could have some more padding in content zones, mobile could use slightly more too
 - [x] The menu has links on top now? -> Creating a menu changed the header dom
