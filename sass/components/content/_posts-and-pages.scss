@@ -144,3 +144,10 @@ body.admin-bar .hero-wrapper {
 .post-edit-link {
 	@include dark-button;
 }
+
+.more-link {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 1rem;
+	@include dark-button;
+}
