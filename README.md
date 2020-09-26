@@ -71,6 +71,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Try to get the pagination to show (by adding tons of posts?) to see what style it gets -> Added pagination manually on the "blog.php" page
 - [x] Style the "Edit" link on pages and posts when logged in
 - [ ] The error message when you try submitting an empty comment isn't styled at all. Is that normal?
+- [ ] On the blog page (blog posts lists) the permalink icon is shown in a really weird place when on large screen and the post title is very long
 - [ ] Find fonts to use -> My default Mint 20 sans-serif one is nice
 - [ ] Change the favicon
 - [ ] Check what we get as OpenGraph metadata
