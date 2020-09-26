@@ -21,6 +21,14 @@
   .icon {
     height: 24px;
   }
+
+  .post-thumbnail {
+    border-bottom: 4px solid $color__ms-accent-1;
+
+    img, svg {
+      display: block;
+    }
+  }
 }
 
 .post-card-title {
