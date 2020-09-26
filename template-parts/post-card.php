@@ -12,11 +12,12 @@
 <article id="post-<?php the_ID(); ?>" class="post-card">
 	<header>
 		<?php
-		if ( is_singular() ) :
+		//if ( is_singular() ) :
 			the_title( '<h1 class="post-card-title">', '</h1>' );
-		else :
-			the_title( '<h1 class="post-card-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
-		endif; ?>
+		//else :
+			//the_title( '<h1 class="post-card-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+    //endif; 
+    ?>
     <div class="post-card-meta">
       <img class="icon" src="<?php bloginfo('template_url'); ?>/assets/calendar-alt-red.svg" alt="Icône de calendrier" />
       <?php
