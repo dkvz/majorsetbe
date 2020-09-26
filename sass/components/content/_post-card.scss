@@ -6,8 +6,29 @@
   padding: 0.35rem 1rem;
   box-shadow: $shadow__card;
 
+
+  header {
+    display: grid;
+    padding: 0.3rem 0rem;
+    row-gap: 0.6rem;
+
+    @include tablet {
+      grid-template-columns: 1fr auto; 
+      border-bottom: 1px solid $color__ms-accent-2;
+    }
+  }
+
   .icon {
     height: 24px;
+  }
+}
+
+.post-card-title {
+  font-size: 1.6rem;
+  margin: 0;
+
+  @include desktop {
+    font-size: 2.1rem;
   }
 }
 

@@ -21,6 +21,8 @@ $query = new WP_Query($args);
 
 	<main id="primary" class="site-main">
 
+		<h1 class="entry-title">Blog &amp; Nouvelles</h1>
+
 		<?php if ( $query->have_posts() ) : ?>
 
 			<!-- .page-header -->

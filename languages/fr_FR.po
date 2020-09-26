@@ -120,7 +120,7 @@ msgstr "Taggé %1$s"
 #. translators: %s: post title
 #: inc/template-tags.php:83
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "Laissez un commentaire<span class=\"screen-reader-text\"> sur %s</span>"
+msgstr "Lâcher un commentaire<span class=\"screen-reader-text\"> sur %s</span>"
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:100

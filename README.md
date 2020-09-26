@@ -46,6 +46,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Need to completely style the event list and calendar pages (monthly and daily view) - Calendar had a hover style that has a bottom border
 - [x] Need to style the day view for event list
 - [x] Home page hero doesn't work at all on Chrome. -> Had to use flex-end instead of just end for the align-items
+- [ ] Pagination doesn't really work on the blog page, seems like the same posts appear on both pages
 - [ ] Style individual post pages + the comment form (does it affect the standard page template too?) + thumbnails
 - [ ] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post.
