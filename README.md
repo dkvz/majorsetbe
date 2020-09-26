@@ -48,7 +48,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Need to style the day view for event list
 - [x] Home page hero doesn't work at all on Chrome. -> Had to use flex-end instead of just end for the align-items
 - [x] Pagination doesn't really work on the blog page, seems like the same posts appear on both pages
-- [ ] Try using a picture as background + a blend mode for pages and maybe event pages 
+- [ ] Try using a picture as background + a blend mode for pages and maybe event pages
 - [ ] Style individual post pages + the comment form (does it affect the standard page template too?) + thumbnails
 - [ ] Remove the "web site" field from the comments form
 - [ ] Maybe use a page layout with an actual page container?
@@ -183,6 +183,15 @@ msgcat fr_FR.po | msgfmt -o fr_FR.mo -
 ```
 
 The mo files get picked up immediately by Wordpress. In my case it's working as expected.
+
+### Picture backgrounds
+I have some sort of prototype of what I could do using background blend modes and gradients in _resources/assets.
+
+The easiest would be to work with body classes and assign a random one to specific pages only. By which I mean to say:
+- Not the homepage
+- Not the "lists" pages (blog, archive, all the event calendar pages (except may be the event details?))
+
+There is a hook which can add classes to body in `template-functions.php` -> That's where we need to add the logic.
 
 ## Original README for the underscore base template
 

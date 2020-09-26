@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiments with backgrounds</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      min-height: 100vh;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #fff;
+      /*
+      //background-color: $color__ms-primary;
+      //background: linear-gradient($color__ms-primary 0%, $color__ms-background-1 50vh);
+      */
+      background: linear-gradient(#fff 0%, rgba(17, 47, 65, 0.6) 98vh);
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .bg1 {
+      background-image: url('bg1.jpg'), linear-gradient(#fff 0%, #112f41 80vh);
+      background-blend-mode: screen;
+    }
+
+    .bg2 {
+      background-image: url('bg1.jpg'), linear-gradient(#fff 0%, #112f41 99vh);
+      background-blend-mode: screen;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Super page de test</h1>
+  <div>
+    <button>Original background</button>
+    <button data-bg="bg1">Background 1</button>
+    <button data-bg="bg2">Background 2</button>
+  </div>
+
+  <script>
+    const btns = document.querySelectorAll('button')
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.body.className = ''
+        const dataBg = btn.getAttribute('data-bg');
+        if (dataBg) {
+          document.body.classList.add(dataBg)
+        }
+      })
+    })
+  </script>
+</body>
+</html>
