@@ -115,29 +115,61 @@ body.admin-bar .hero-wrapper {
 	margin: 1.5em 0 0;
 }
 
-.post {
-	.entry-header {
-		display: grid;
-		padding: 0.3rem 0 1rem 0;
-		row-gap: 0.6rem;
-		border-bottom: 1px solid $color__ms-accent-2;
+.entry-header {
+	border-bottom: 1px solid $color__ms-accent-2;
+}
 
-		.entry-meta {
-			font-size: 1.2rem;
-			font-weight: 700;
-			
-			@include tablet {
-				display: flex;
-				flex-direction: column;
-				align-self: center;
-			}
-		}
-	
+.post-header {
+	display: grid;
+	padding: 0.3rem 0 1rem 0;
+	row-gap: 0.6rem;
+	column-gap: 1.2rem;
+
+	.entry-meta {
+		font-size: 1.2rem;
+		font-weight: 700;
+		
 		@include tablet {
-			grid-template-columns: 1fr auto; 
-			padding: 0.3rem 0rem;
+			display: flex;
+			flex-direction: column;
+			align-self: center;
 		}
 	}
+
+	@include tablet {
+		grid-template-columns: 1fr auto; 
+		padding: 0.3rem 0rem;
+	}
+}
+
+.has-post-thumbnail {
+	
+	.entry-header {
+		position: relative;
+		border-bottom: 6px double $color__ms-accent-2;
+		min-height: 220px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+
+		@include tablet {
+			min-height: 175px;
+		}
+	}
+
+	.post-header {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		padding: 0.8rem;
+		background-color: transparentize($color__ms-background-1, 0.3);
+
+		.entry-title {
+			background-color: transparent;
+		}
+	}
+
 }
 
 .page-links {
@@ -166,8 +198,12 @@ body.admin-bar .hero-wrapper {
 	}
 }
 
-.post-edit-link {
+.post-edit-link,
+.nav-previous a,
+.nav-next a {
 	@include dark-button;
+	display: inline-block;
+	height: 100%;
 }
 
 .more-link {
@@ -195,4 +231,8 @@ body.admin-bar .hero-wrapper {
 	a {
 		@include dark-button;
 	}
+}
+
+.post-thumbnail img {
+	margin: 0 auto;
 }
