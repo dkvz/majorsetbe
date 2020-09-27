@@ -32,3 +32,19 @@ select {
 textarea {
 	width: 100%;
 }
+
+.comment-form {
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"] {
+		width: 100%;
+	}
+
+	@include tablet {
+		padding: 1rem;
+		background-color: transparentize($color__ms-primary, 0.7);
+	}
+
+}

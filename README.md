@@ -49,10 +49,11 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Home page hero doesn't work at all on Chrome. -> Had to use flex-end instead of just end for the align-items
 - [x] Pagination doesn't really work on the blog page, seems like the same posts appear on both pages
 - [x] Try using a picture as background + a blend mode for pages and maybe event pages
-- [ ] Style individual post pages + the comment form (does it affect the standard page template too?) + thumbnails
+- [ ] Style individual post pages + the comment form (does it affect the standard page template too?) + article image
 - [x] Remove the "web site" field from the comments form
 - [x] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
 - [x] Add a permalink icon ton post-card.php (next to the title) so that people can link a specific post even without the "read more" link
+- [ ] content-search.php template has never been modified - I probably need to
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post.
 - [ ] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
@@ -64,7 +65,6 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style the blue info message "This event is passed"
 - [x] I need a different style for .tribe-events-schedule when there are no thumbnails for the event and screen is large
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
-- [ ] Can we use the "IMAGES DE MISE EN AVANT" for blog posts? I assume they're given to the post template (can use them for events but they look kinda weird)
 - [x] Site logo should probably be smaller on mobile and also should link to homepage -> I'll keep it large for now
 - [x] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know -> See discussion section
 - [x] Try to get the pagination to show (by adding tons of posts?) to see what style it gets -> Added pagination manually on the "blog.php" page
