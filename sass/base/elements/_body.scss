@@ -5,4 +5,27 @@ body {
 	/* TRYING OUT SOMETHING FIXED: */
 	background: linear-gradient($color__ms-background-1 0%, transparentize($color__ms-primary, 0.4) 98vh);
 	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg1 {
+	//background-image: url('assets/bg1.jpg'), linear-gradient($color__ms-background-1 0%, $color__ms-primary 99vh);
+	background-image: url('assets/bg1.jpg'), linear-gradient($color__ms-background-1 0%, transparentize($color__ms-background-2, 0.12) 99vh);
+	background-blend-mode: overlay;
+}
+
+.bg2 {
+	background-image: url('assets/bg2.jpg'), linear-gradient($color__ms-background-1 0%, transparentize($color__ms-background-2, 0.12) 99vh);
+	background-blend-mode: overlay;
+}
+
+.bg3 {
+	background-image: url('assets/bg3.jpg'), linear-gradient($color__ms-background-1 0%, transparentize($color__ms-background-2, 0.12) 99vh);
+	background-blend-mode: overlay;
+}
+
+.bg4 {
+	background-image: url('assets/bg4.jpg'), linear-gradient($color__ms-background-1 0%, transparentize($color__ms-background-2, 0.12) 99vh);
+	background-blend-mode: overlay;
 }

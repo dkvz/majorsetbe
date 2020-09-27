@@ -194,6 +194,15 @@ The easiest would be to work with body classes and assign a random one to specif
 
 There is a hook which can add classes to body in `template-functions.php` -> That's where we need to add the logic.
 
+To add a custom background, check out `_body.scss` and add a .bgX class with the right background and blend mode (minimize the image!).
+
+Then increment the amount of custom backgrounds, which is a constant in `template-functions.php`:
+```php
+// The amount of custom backgrounds configured
+// in _body.scss (used to pick one at random):
+define('BG_COUNT', 4);
+```
+
 ## Original README for the underscore base template
 
 _s
