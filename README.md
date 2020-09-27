@@ -54,6 +54,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
 - [x] Add a permalink icon ton post-card.php (next to the title) so that people can link a specific post even without the "read more" link
 - [ ] content-search.php template has never been modified - I probably need to
+- [ ] Style the comments themselves
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post.
 - [ ] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
