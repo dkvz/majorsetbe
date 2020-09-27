@@ -184,3 +184,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Seen this on Stackoverflow, I'm trying to disable
+ * the "url/website" field in comment forms.
+ */
+function prefix_disable_comment_url($fields) { 
+	unset($fields['url']);
+	return $fields;
+}
+add_filter('comment_form_default_fields','prefix_disable_comment_url');
