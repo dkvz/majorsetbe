@@ -49,13 +49,13 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Home page hero doesn't work at all on Chrome. -> Had to use flex-end instead of just end for the align-items
 - [x] Pagination doesn't really work on the blog page, seems like the same posts appear on both pages
 - [x] Try using a picture as background + a blend mode for pages and maybe event pages
-- [ ] Style individual post pages + the comment form (does it affect the standard page template too?) + article image
+- [x] Style individual post pages + the comment form (does it affect the standard page template too?) + article image
 - [x] Remove the "web site" field from the comments form
 - [x] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
 - [x] Add a permalink icon ton post-card.php (next to the title) so that people can link a specific post even without the "read more" link
 - [ ] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [ ] content-search.php template has never been modified - I probably need to
-- [ ] Style the comments themselves
+- [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post.
 - [ ] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query

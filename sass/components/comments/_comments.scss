@@ -5,3 +5,39 @@
 .bypostauthor {
 	display: block;
 }
+
+/** Given to a li element **/
+.comment {
+	font-weight: 700;
+	font-size: 1.2rem;
+	padding-left: 0.6rem;
+}
+
+/*.comment * {
+	font-size: 1rem;
+	font-weight: initial;
+}*/
+
+.comment-body {
+	@include rounded-card;
+	padding-top: 1rem;
+	padding-bottom: 1rem;	
+}
+
+.comment-list {
+	margin-left: 0;
+	padding-left: 28px;
+	max-width: 650px;
+}
+
+.comment-reply-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.comment-body,
+.comment-respond {
+	font-size: 1rem;
+	font-weight: initial;
+}

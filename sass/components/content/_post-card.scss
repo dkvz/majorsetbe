@@ -1,11 +1,5 @@
 .post-card {
-  background-color: $color__ms-background-2;
-  color: $color__ms-primary;
-  margin-bottom: 2rem;
-  border-radius: 20px;
-  padding: 0.35rem 1rem;
-  box-shadow: $shadow__card;
-
+  @include rounded-card;
 
   header {
     display: grid;
