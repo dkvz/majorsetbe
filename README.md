@@ -53,8 +53,9 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Remove the "web site" field from the comments form
 - [x] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
 - [x] Add a permalink icon ton post-card.php (next to the title) so that people can link a specific post even without the "read more" link
+- [ ] Test the heading sizes in articles for mobile - Might be too big - Heading too big on search page for mobile
+- [x] Style content-search like post-card - Leave the excerpt - Remove thumbnail for events only
 - [ ] How I structured posts with thumbnails in content.php should be applied to other relevant php files
-- [ ] content-search.php template has never been modified - I probably need to
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post.
 - [ ] Links inside of blockquote should have another color

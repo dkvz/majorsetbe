@@ -15,12 +15,12 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
+				<h2 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'major_set_be' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Search Results for: %s', 'major_set_be' ), '<small>' . get_search_query() . '</small>' );
 					?>
-				</h1>
+				</h2>
 			</header><!-- .page-header -->
 
 			<?php
