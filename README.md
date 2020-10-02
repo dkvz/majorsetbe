@@ -58,9 +58,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
-- [ ] Links inside of blockquote should have another color
+- [x] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
-- [ ] "Lettrines" aint lookin good
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
 - [ ] Tablets could have some more padding in content zones, mobile could use slightly more too
 - [ ] Check discussion section about the block editor and theme config
@@ -77,7 +76,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] On the blog page (blog posts lists) the permalink icon is shown in a really weird place when on large screen and the post title is very long
 - [ ] Find fonts to use -> My default Mint 20 sans-serif one is nice
 - [ ] Change the favicon
-- [ ] Check what we get as OpenGraph metadata
+- [ ] Check what we get as OpenGraph metadata for pages with or without thumbnails, posts and events
 - [x] Add something to make it easier to declare the common media queries -> Added mixins
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
 - [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least - Try fixing the SCSS lint errors

@@ -28,6 +28,12 @@ blockquote {
 		margin-top: 0.4rem;
 		margin-bottom: 0.4rem;
 	}
+
+	a,
+	a:visited {
+		color: $color__ms-background-1;
+		font-weight: 700;
+	}
 }
 
 blockquote::before{
