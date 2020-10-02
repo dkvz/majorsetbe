@@ -55,9 +55,9 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Add a permalink icon ton post-card.php (next to the title) so that people can link a specific post even without the "read more" link
 - [x] Test the heading sizes in articles for mobile - Might be too big - Heading too big on search page for mobile
 - [x] Style content-search like post-card - Leave the excerpt - Remove thumbnail for events only
-- [ ] How I structured posts with thumbnails in content.php should be applied to other relevant php files
+- [x] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
-- [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post.
+- [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
 - [ ] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
 - [ ] "Lettrines" aint lookin good
@@ -89,6 +89,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
 - [ ] Minify the CSS in the prod build (is it already (don't think so)?)
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
+- [ ] How do you make an image that links to its full size? I think right click open works because images have a urlset, but still
 
 ## Resources and links
 * Doc for Event Calendar custom functions (use the search thingy): https://docs.theeventscalendar.com

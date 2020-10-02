@@ -142,6 +142,17 @@ body.admin-bar .hero-wrapper {
 	}
 }
 
+// If no meta, make it a big single column:
+@include tablet {
+	.no-meta {
+		border: none;
+	}
+	
+	.no-meta .post-header {
+		grid-template-columns: 1fr;
+	}
+}
+
 .has-post-thumbnail {
 	
 	.entry-header {

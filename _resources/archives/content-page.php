@@ -10,14 +10,11 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header no-meta">
-		<?php major_set_be_post_thumbnail(); ?>
-		<div class="post-header">
-			<div>
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</div>
-		</div>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
+
+	<?php major_set_be_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
