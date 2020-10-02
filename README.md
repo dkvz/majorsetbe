@@ -23,6 +23,12 @@ npm run watch
 
 The theme won't work unless watch or "compile:css" is ran since the output CSS files are not included in the repo.
 
+To build the theme, you can use (at least on Mac & Linux):
+```
+npm run bundle
+```
+Which compiles and minifies the CSS (I added that part) and in case of success, creates a zip archive one level higher with the theme in it.
+
 ## To configure inside Wordpress
 * Main account should probably be called "Major Set" or "MajorSet".
 * The sidebar - It appears in the footer and most probably has to be changed.
@@ -86,7 +92,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] A **WHOLE BUNCH** of wp-block* styles need to be implemented, could probably steal them from one of the official themes
 - [ ] I've seen somewhere that you're supposed to tell Gutenberg the color palette it can show to users
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
-- [ ] Minify the CSS in the prod build (is it already (don't think so)?)
+- [x] Minify the CSS in the prod build (is it already (don't think so)?) -> Added the minify to the "bundle" npm script
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
 - [ ] How do you make an image that links to its full size? I think right click open works because images have a urlset, but still
 
