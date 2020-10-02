@@ -53,7 +53,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Remove the "web site" field from the comments form
 - [x] Style individual blog posts in the Blog page and check that it also affects the "archive.php" pages
 - [x] Add a permalink icon ton post-card.php (next to the title) so that people can link a specific post even without the "read more" link
-- [ ] Test the heading sizes in articles for mobile - Might be too big - Heading too big on search page for mobile
+- [x] Test the heading sizes in articles for mobile - Might be too big - Heading too big on search page for mobile
 - [x] Style content-search like post-card - Leave the excerpt - Remove thumbnail for events only
 - [ ] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
@@ -63,6 +63,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] "Lettrines" aint lookin good
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
 - [ ] Tablets could have some more padding in content zones, mobile could use slightly more too
+- [ ] Check discussion section about the block editor and theme config
 - [x] The menu has links on top now? -> Creating a menu changed the header dom
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
 - [x] Style the blue info message "This event is passed"
@@ -204,6 +205,17 @@ Then increment the amount of custom backgrounds, which is a constant in `templat
 // in _body.scss (used to pick one at random):
 define('BG_COUNT', 4);
 ```
+
+### Working with the block editor
+The block editor AKA Gutenberg is not supported by Underscore. Something I wish I had known before going with Underscore.
+
+Anyway, here are a few resources on things to configure in the theme to get more block support (including what I understand to be responsives images - though we may just have these already out of the box):
+
+* https://kinsta.com/fr/blog/theme-twenty-twenty
+* https://kinsta.com/blog/twenty-nineteen-theme
+* https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-font-sizes
+
+The last one explains how to set the allowed fonts sizes but more importantly there's the same thing for colors, and we have theme colors so that would be nice to implement.
 
 ## Original README for the underscore base template
 
