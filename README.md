@@ -65,7 +65,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
-- [ ] Style the tables
+- [x] Style the tables
 - [ ] Can video elements be made responsive? Are they by default?
 - [x] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
@@ -82,6 +82,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style the "Edit" link on pages and posts when logged in
 - [ ] The error message when you try submitting an empty comment isn't styled at all. Is that normal?
 - [x] On the blog page (blog posts lists) the permalink icon is shown in a really weird place when on large screen and the post title is very long
+- [x] Alignement options don't work on audio elements in the Gutenberg editor
 - [ ] Find fonts to use -> My default Mint 20 sans-serif one is nice
 - [x] Change the favicon -> Documented how to do it inside Wordpress above
 - [ ] Check what we get as OpenGraph metadata for pages with or without thumbnails, posts and events
@@ -89,6 +90,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?
 - [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least - Try fixing the SCSS lint errors
 - [x] Flex or grid the search widget to get consistent heihts on the input and button
+- [ ] Add my own lightbox effect using JS
+- [ ] Did I minify the JPG backgrounds?
 - [ ] There is a theme checker for Wordpress - Should probably use it at some point
 - [ ] Test the npm scripts on Windows
 - [ ] A **WHOLE BUNCH** of wp-block* styles need to be implemented, could probably steal them from one of the official themes
@@ -96,7 +99,6 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
 - [x] Minify the CSS in the prod build (is it already (don't think so)?) -> Added the minify to the "bundle" npm script
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
-- [ ] How do you make an image that links to its full size? I think right click open works because images have a urlset, but still
 
 ## Resources and links
 * Doc for Event Calendar custom functions (use the search thingy): https://docs.theeventscalendar.com

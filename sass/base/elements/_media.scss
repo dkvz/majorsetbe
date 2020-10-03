@@ -17,5 +17,14 @@ figure {
 .wp-block-audio {
 	@include tablet {
 		width: 50%;
+		margin: 0 auto;
 	}
+}
+
+.wp-block[data-align="left"] .wp-block-audio {
+	margin-right: 2rem;
+}
+
+.wp-block[data-align="right"] .wp-block-audio {
+	margin-left: 2rem;
 }
