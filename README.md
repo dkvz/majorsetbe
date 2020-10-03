@@ -36,6 +36,7 @@ Which compiles and minifies the CSS (I added that part) and in case of success, 
 * Disallow access to xmlrpc.php at web server level - Will probably make another private note for the hosting concerns.
 * Configure/create the menu - Add the "Représentations" link with either "?post_type=tribe_events" or "/events/list" as URL depending on rewriting being on or off.
 * Create the "Blog" page (or "News" or whatever) and select "Blog section" as the page template. Put that page in the menu too.
+* Set the favicon: go to Appearance » Customize and click on the ‘Site Identity’ tab - Change the site icon at the bottom and select the file named `logo-notext_512.png` in the assets directory.
 
 ## Editing the styling
 The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignor (**THEY NOW ARE**). Keeping it around so the theme still works even if I forget to build the theme assets.
@@ -64,10 +65,11 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
+- [ ] Style the tables
+- [ ] Can video elements be made responsive? Are they by default?
 - [x] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
-- [ ] Tablets could have some more padding in content zones, mobile could use slightly more too
 - [ ] Check discussion section about the block editor and theme config
 - [x] The menu has links on top now? -> Creating a menu changed the header dom
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
@@ -79,9 +81,9 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Try to get the pagination to show (by adding tons of posts?) to see what style it gets -> Added pagination manually on the "blog.php" page
 - [x] Style the "Edit" link on pages and posts when logged in
 - [ ] The error message when you try submitting an empty comment isn't styled at all. Is that normal?
-- [ ] On the blog page (blog posts lists) the permalink icon is shown in a really weird place when on large screen and the post title is very long
+- [x] On the blog page (blog posts lists) the permalink icon is shown in a really weird place when on large screen and the post title is very long
 - [ ] Find fonts to use -> My default Mint 20 sans-serif one is nice
-- [ ] Change the favicon
+- [x] Change the favicon -> Documented how to do it inside Wordpress above
 - [ ] Check what we get as OpenGraph metadata for pages with or without thumbnails, posts and events
 - [x] Add something to make it easier to declare the common media queries -> Added mixins
 - [ ] Do we need the infinite scrolling or "shopping cart" CSS and JS?

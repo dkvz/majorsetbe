@@ -22,7 +22,7 @@ blockquote {
 	margin-left: 20px;
 	margin-right: 20px;
 	quotes: "\201C""\201D""\2018""\2019";
-	line-height: 1.7;
+	line-height: $font__line-height-pre;
 
 	p {
 		margin-top: 0.4rem;
