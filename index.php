@@ -64,6 +64,10 @@ get_header();
 
 		<section class="main-section" id="mainSection">
 
+			<h1 class="entry-title">A la une</h1>
+
+			<hr>
+
 			<h1 class="entry-title" id="upcomingEvents">Prochains concerts</h1>
 
 			<?php

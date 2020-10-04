@@ -37,6 +37,8 @@ Which compiles and minifies the CSS (I added that part) and in case of success, 
 * Configure/create the menu - Add the "Représentations" link with either "?post_type=tribe_events" or "/events/list" as URL depending on rewriting being on or off.
 * Create the "Blog" page (or "News" or whatever) and select "Blog section" as the page template. Put that page in the menu too.
 * Set the favicon: go to Appearance » Customize and click on the ‘Site Identity’ tab - Change the site icon at the bottom and select the file named `logo-notext_512.png` in the assets directory.
+* Create a category called "Annonces".
+* From the admin dashboard: remove the top section "customize your theme" or whatever it's called bu clicking "ignore" on the top right.
 
 ## Editing the styling
 The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignor (**THEY NOW ARE**). Keeping it around so the theme still works even if I forget to build the theme assets.
@@ -69,6 +71,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Can video elements be made responsive? Are they by default?
 - [x] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
+- [ ] Create a copy of the scroll down button inside the CTA, hide it on mobile and tablet (show the pos. absolute one - hide it on desktop)
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
 - [ ] Check discussion section about the block editor and theme config
 - [ ] I need to think where to link the Facebook and YouTube, kinda forgot about that
@@ -81,6 +84,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] There's apparently things we need to translate in the pot file thingy - I also added at least one template (event-card.php) that might need some pot... Stuff - I Don't know -> See discussion section
 - [x] Try to get the pagination to show (by adding tons of posts?) to see what style it gets -> Added pagination manually on the "blog.php" page
 - [x] Style the "Edit" link on pages and posts when logged in
+- [ ] It's possible to pin a post to top of the blog, whereas it'll appear on top of the list - But there are no other indications - Maybe check how Twentytwenty does it
 - [ ] The error message when you try submitting an empty comment isn't styled at all. Is that normal?
 - [x] On the blog page (blog posts lists) the permalink icon is shown in a really weird place when on large screen and the post title is very long
 - [x] Alignement options don't work on audio elements in the Gutenberg editor
