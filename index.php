@@ -27,6 +27,12 @@ get_header();
 			</div>
 		</section>
 
+		<div class="scroll-down-wrapper">
+			<a class="scroll-down" href="#mainSection">
+				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
+			</a>
+		</div>
+
 		<?php
 		/*
 		if ( have_posts() ) :
@@ -56,7 +62,7 @@ get_header();
 		*/
 		?>
 
-		<section class="main-section">
+		<section class="main-section" id="mainSection">
 
 			<h1 class="entry-title" id="upcomingEvents">Prochains concerts</h1>
 

@@ -55,7 +55,8 @@ body.admin-bar .hero-wrapper {
 	column-gap: 0.75rem;
 }
 
-.hero-cta a {
+.hero-cta a,
+a.scroll-down {
 	@include bare-button;
 	min-width: 150px;
 	padding: 0.6rem;
@@ -77,6 +78,29 @@ body.admin-bar .hero-wrapper {
 
 	&:focus {
 		outline: 1px solid $color__ms-accent-1;
+	}
+}
+
+.scroll-down-wrapper {
+	position: absolute;
+	bottom: 30px;
+	@include center-flex-mixin;
+}
+
+.scroll-down,
+a.scroll-down {
+	min-width: unset;
+	padding: 4px;
+	border-radius: 50%;
+
+	.icon {
+		height: 64px;
+		width: 64px;
+
+		@include tablet {
+			height: 80px;
+			width: 80px;
+		}
 	}
 }
 
