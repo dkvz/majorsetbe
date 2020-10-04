@@ -71,6 +71,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
 - [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
 - [ ] Check discussion section about the block editor and theme config
+- [ ] I need to think where to link the Facebook and YouTube, kinda forgot about that
 - [x] The menu has links on top now? -> Creating a menu changed the header dom
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
 - [x] Style the blue info message "This event is passed"
