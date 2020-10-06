@@ -175,7 +175,8 @@ a.scroll-down {
 		border: none;
 	}
 	
-	.no-meta .post-header {
+	.no-meta .post-header,
+	.post-card.featured header {
 		grid-template-columns: 1fr;
 	}
 }

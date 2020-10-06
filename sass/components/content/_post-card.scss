@@ -3,13 +3,14 @@
 
   header {
     display: grid;
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 0 1rem 0;
     row-gap: 0.6rem;
+    border-bottom: 1px solid $color__ms-accent-2;
     
     @include tablet {
       grid-template-columns: 1fr auto; 
+      padding: 0.3rem 0;
       column-gap: 2rem;
-      border-bottom: 1px solid $color__ms-accent-2;
     }
   }
 

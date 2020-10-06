@@ -72,8 +72,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Can video elements be made responsive? Are they by default?
 - [x] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
-- [ ] Create a copy of the scroll down button inside the CTA, hide it on mobile and tablet (show the pos. absolute one - hide it on desktop)
-- [ ] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
+- [x] Create a copy of the scroll down button inside the CTA, hide it on mobile and tablet (show the pos. absolute one - hide it on desktop)
+- [x] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
 - [ ] Check discussion section about the block editor and theme config
 - [ ] I need to think where to link the Facebook and YouTube, kinda forgot about that
 - [x] The menu has links on top now? -> Creating a menu changed the header dom

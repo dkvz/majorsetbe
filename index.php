@@ -13,6 +13,21 @@
  */
 
 get_header();
+
+// First make the query for the featured article, if any.
+// It's juste the latest element in category "Annonces".
+$ftArgs = array(
+	'category_name' => 'annonces',
+	'posts_per_page' => 1,
+	'offset' => 0,
+	'orderby' => 'ID',
+	'order' => 'DESC',
+	'post_status' => 'publish',
+	'suppress_filters' => true 
+);
+
+$ftLoop = new WP_Query($ftArgs);
+
 ?>
 
 	<main id="primary" class="site-main flex-center">
@@ -24,54 +39,36 @@ get_header();
 					<a href="#upcomingEvents">Prochains concerts</a>
 					<a href="#">Engagez-nous!</a>
 				</div>
+				<?php if ( $ftLoop->have_posts() ): ?>
 				<div class="scroll-down-wrapper mt-2 hide-md">
 					<a class="scroll-down" href="#mainSection" title="Afficher la suite">
 						<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
 					</a>
 				</div>
+				<?php endif; ?>
 			</div>
 		</section>
 
+		<?php if ( $ftLoop->have_posts() ): ?>
 		<div class="scroll-down-wrapper abs-bottom hide-lg">
 			<a class="scroll-down" href="#mainSection" title="Afficher la suite">
 				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
 			</a>
 		</div>
-
-		<?php
-		/*
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
-
-			while ( have_posts() ) :
-				the_post();
-
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		*/
-		?>
+		<?php endif; ?>
 
 		<section class="main-section" id="mainSection">
 
+			<?php if ( $ftLoop->have_posts() ): ?>
 			<h1 class="entry-title">A la une</h1>
+			<?php 
 
+				$ftLoop->the_post();
+				get_template_part( 'template-parts/featured-post-card' );
+
+			?>
 			<hr>
+			<?php endif; ?>
 
 			<h1 class="entry-title" id="upcomingEvents">Prochains concerts</h1>
 
@@ -80,6 +77,9 @@ get_header();
 			* Event dates are stored as string using a format that
 			* allowed comparison: "Y-m-d H:i:s"
 			*/
+
+			// Before that we need to reset wp_query:
+			wp_reset_postdata();
 			
 			/*
 			We could actually use a function called tribe_get_events(), it
