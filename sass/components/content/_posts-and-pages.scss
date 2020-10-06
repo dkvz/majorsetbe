@@ -81,9 +81,12 @@ a.scroll-down {
 	}
 }
 
-.scroll-down-wrapper {
+.abs-bottom {
 	position: absolute;
 	bottom: 30px;
+}
+
+.scroll-down-wrapper {
 	@include center-flex-mixin;
 }
 

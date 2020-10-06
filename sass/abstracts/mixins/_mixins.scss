@@ -115,12 +115,18 @@ Mixins for media queries
 */
 @mixin tablet {
 	@media (min-width: #{$size__tablet}) {
-			@content;
+		@content;
 	}
 }
 
 @mixin desktop {
 	@media (min-width: #{$size__desktop}) {
-			@content;
+		@content;
+	}
+}
+
+@mixin tablet-and-smaller  {
+	@media (max-width: #{$size__desktop}) {
+		@content;
 	}
 }

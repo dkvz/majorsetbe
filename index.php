@@ -24,11 +24,16 @@ get_header();
 					<a href="#upcomingEvents">Prochains concerts</a>
 					<a href="#">Engagez-nous!</a>
 				</div>
+				<div class="scroll-down-wrapper mt-2 hide-md">
+					<a class="scroll-down" href="#mainSection" title="Afficher la suite">
+						<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
+					</a>
+				</div>
 			</div>
 		</section>
 
-		<div class="scroll-down-wrapper">
-			<a class="scroll-down" href="#mainSection">
+		<div class="scroll-down-wrapper abs-bottom hide-lg">
+			<a class="scroll-down" href="#mainSection" title="Afficher la suite">
 				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
 			</a>
 		</div>

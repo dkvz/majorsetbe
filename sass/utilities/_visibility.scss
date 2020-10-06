@@ -1,0 +1,12 @@
+// Hide on small screens and tablets
+.hide-md {
+	@include tablet-and-smaller {
+		display: none;
+	}
+}
+
+.hide-lg {
+	@include desktop {
+		display: none;
+	}
+}
