@@ -68,7 +68,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
 - [x] Style the tables
-- [ ] Completely delete the "featured-post" branch.
+- [x] Completely delete the "featured-post" branch.
 - [x] Can video elements be made responsive? Are they by default? -> I think so lol
 - [x] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
@@ -100,8 +100,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Did I minify the JPG backgrounds?
 - [ ] There is a theme checker for Wordpress - Should probably use it at some point
 - [ ] Test the npm scripts on Windows
-- [ ] A **WHOLE BUNCH** of wp-block* styles need to be implemented, could probably steal them from one of the official themes
-- [ ] I've seen somewhere that you're supposed to tell Gutenberg the color palette it can show to users
+- [ ] Re-check all the wp-blocks that are available, many of them could use more styling
+- [ ] For the Gutenberg colors, we need to create the classes like `has-accent-2-color` for all of the _ms_colors.scss
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
 - [x] Minify the CSS in the prod build (is it already (don't think so)?) -> Added the minify to the "bundle" npm script
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.

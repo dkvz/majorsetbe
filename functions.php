@@ -106,6 +106,48 @@ if ( ! function_exists( 'major_set_be_setup' ) ) :
 		 */
 		add_theme_support( 'editor-styles' );
 		add_editor_style( 'editor-styles.css' );
+
+		/**
+		 * Adding the theme colors to Guntenberg:
+		 */
+		add_theme_support( 'editor-color-palette', array(
+			array(
+				'name' => __( 'Primaire', 'themeLangDomain' ),
+				'slug' => 'primary',
+				'color' => '#112f41',
+			),
+			array(
+				'name' => __( 'Turquoise', 'themeLangDomain' ),
+				'slug' => 'title-1',
+				'color' => '#068587',
+			),
+			array(
+				'name' => __( 'Accent 1', 'themeLangDomain' ),
+				'slug' => 'accent-1',
+				'color' => '#f2b134',
+			),
+			array(
+				'name' => __( 'Accent 2', 'themeLangDomain' ),
+				'slug' => 'accent-2',
+				'color' => '#ed553b',
+			),
+			array(
+				'name' => __( 'Blanc', 'themeLangDomain' ),
+				'slug' => 'background-1',
+				'color' => '#fff',
+			),
+			array(
+				'name' => __( 'Clair', 'themeLangDomain' ),
+				'slug' => 'background-1',
+				'color' => '#e9f6f3',
+			),
+			array(
+				'name' => __( 'Gris', 'themeLangDomain' ),
+				'slug' => 'grayed',
+				'color' => '#778582',
+			),
+		) );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'major_set_be_setup' );
