@@ -69,7 +69,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
 - [x] Style the tables
 - [ ] Completely delete the "featured-post" branch.
-- [ ] Can video elements be made responsive? Are they by default?
+- [x] Can video elements be made responsive? Are they by default? -> I think so lol
 - [x] Links inside of blockquote should have another color
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
 - [x] Create a copy of the scroll down button inside the CTA, hide it on mobile and tablet (show the pos. absolute one - hide it on desktop)

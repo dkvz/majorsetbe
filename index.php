@@ -60,7 +60,10 @@ $ftLoop = new WP_Query($ftArgs);
 		<section class="main-section" id="mainSection">
 
 			<?php if ( $ftLoop->have_posts() ): ?>
-			<h1 class="entry-title">A la une</h1>
+			<h1 class="entry-title">
+				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/thumbtack.svg" alt="Message épinglé" />
+				A la une
+			</h1>
 			<?php 
 
 				$ftLoop->the_post();
