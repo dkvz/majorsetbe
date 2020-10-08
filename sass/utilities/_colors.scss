@@ -1,0 +1,64 @@
+/**
+* Started the current file to store the classes that
+* the Gutenberg editor adds when you pick a color
+* from the theme preselections (which is setup in
+* functions.php).
+*/
+
+.has-primary-color {
+  color: $color__ms-primary;
+}
+
+.has-accent-1-color {
+  color: $color__ms-accent-1;
+}
+
+.has-accent-2-color,
+.has-title-2-color {
+  color: $color__ms-accent-2;
+}
+
+.has-title-1-color {
+  color: $color__ms-title-1;
+}
+
+.has-background-1-color {
+  color: $color__ms-background-1;
+}
+
+.has-background-2-color {
+  color: $color__ms-background-2;
+}
+
+.has-grayed-color {
+  color: $color__ms-grayed;
+}
+
+.has-primary-background-color {
+  background-color: $color__ms-primary;
+}
+
+.has-accent-1-background-color {
+  background-color: $color__ms-accent-1;
+}
+
+.has-accent-2-background-color,
+.has-title-2-background-color {
+  background-color: $color__ms-accent-2;
+}
+
+.has-title-1-background-color {
+  background-color: $color__ms-title-1;
+}
+
+.has-background-1-background-color {
+  background-color: $color__ms-background-1;
+}
+
+.has-background-2-background-color {
+  background-color: $color__ms-background-2;
+}
+
+.has-grayed-background-color {
+  background-color: $color__ms-grayed;
+}

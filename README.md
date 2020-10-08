@@ -39,6 +39,7 @@ Which compiles and minifies the CSS (I added that part) and in case of success, 
 * Set the favicon: go to Appearance » Customize and click on the ‘Site Identity’ tab - Change the site icon at the bottom and select the file named `logo-notext_512.png` in the assets directory.
 * Create a category called "Annonces".
 * From the admin dashboard: remove the top section "customize your theme" or whatever it's called bu clicking "ignore" on the top right.
+* Create the contact page with a small into message, also link the social accounts in there.
 
 ## Editing the styling
 The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignor (**THEY NOW ARE**). Keeping it around so the theme still works even if I forget to build the theme assets.
@@ -67,6 +68,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
+- [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
 - [x] Style the tables
 - [x] Completely delete the "featured-post" branch.
 - [x] Can video elements be made responsive? Are they by default? -> I think so lol
@@ -74,10 +76,9 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Test if the blog page also shows unpublished articles, it might do because of the custom query
 - [x] Create a copy of the scroll down button inside the CTA, hide it on mobile and tablet (show the pos. absolute one - hide it on desktop)
 - [x] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
-- [ ] Check discussion section about the block editor and theme config
+- [ ] Check discussion section about the block editor and theme config, there's probably more we can do
 - [ ] I need to think where to link the Facebook and YouTube, kinda forgot about that
 - [x] The menu has links on top now? -> Creating a menu changed the header dom
-- [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
 - [x] Style the blue info message "This event is passed"
 - [x] I need a different style for .tribe-events-schedule when there are no thumbnails for the event and screen is large
 - [ ] I need to try a navigation menu with nested menus since I commented most of the preexisting navigation styles
@@ -89,7 +90,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] The error message when you try submitting an empty comment isn't styled at all. Is that normal?
 - [x] On the blog page (blog posts lists) the permalink icon is shown in a really weird place when on large screen and the post title is very long
 - [x] Alignement options don't work on audio elements in the Gutenberg editor
-- [ ] Find fonts to use -> My default Mint 20 sans-serif one is nice
+- [ ] Find fonts to use -> Need to test if Ubuntu font shows on other browsers
 - [x] Change the favicon -> Documented how to do it inside Wordpress above
 - [ ] Check what we get as OpenGraph metadata for pages with or without thumbnails, posts and events
 - [x] Add something to make it easier to declare the common media queries -> Added mixins
@@ -97,11 +98,13 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least - Try fixing the SCSS lint errors
 - [x] Flex or grid the search widget to get consistent heihts on the input and button
 - [ ] Add my own lightbox effect using JS
-- [ ] Did I minify the JPG backgrounds?
+- [ ] Did I minify the JPG backgrounds? - Add more of them
+- [x] Try the text sizes in Gutenberg
 - [ ] There is a theme checker for Wordpress - Should probably use it at some point
 - [ ] Test the npm scripts on Windows
 - [ ] Re-check all the wp-blocks that are available, many of them could use more styling
-- [ ] For the Gutenberg colors, we need to create the classes like `has-accent-2-color` for all of the _ms_colors.scss
+- [x] For the Gutenberg colors, we need to create the classes like `has-accent-2-color` for all of the _ms_colors.scss
+- [x] Test changing background colors for blocks in Gutenberg using theme colors; Also try setting a custom color both for foreground and background
 - [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
 - [x] Minify the CSS in the prod build (is it already (don't think so)?) -> Added the minify to the "bundle" npm script
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.

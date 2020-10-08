@@ -138,7 +138,7 @@ if ( ! function_exists( 'major_set_be_setup' ) ) :
 			),
 			array(
 				'name' => __( 'Clair', 'themeLangDomain' ),
-				'slug' => 'background-1',
+				'slug' => 'background-2',
 				'color' => '#e9f6f3',
 			),
 			array(

@@ -37,7 +37,7 @@ $ftLoop = new WP_Query($ftArgs);
 				<h1 class="hero-title"><span>Major Set:</span> <span>The Band</span></h1>
 				<div class="hero-cta">
 					<a href="#upcomingEvents">Prochains concerts</a>
-					<a href="#">Engagez-nous!</a>
+					<a href="/contact">Engagez-nous!</a>
 				</div>
 				<?php if ( $ftLoop->have_posts() ): ?>
 				<div class="scroll-down-wrapper mt-2 hide-md">
