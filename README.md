@@ -69,6 +69,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
+- [ ] See discussion section about a11y - Some images and the scroll-down button could use screen reader text
 - [x] Style the tables
 - [x] Completely delete the "featured-post" branch.
 - [x] Can video elements be made responsive? Are they by default? -> I think so lol
@@ -235,6 +236,20 @@ Anyway, here are a few resources on things to configure in the theme to get more
 * https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-font-sizes
 
 The last one explains how to set the allowed fonts sizes but more importantly there's the same thing for colors, and we have theme colors so that would be nice to implement.
+
+### Image-only links and a11y
+The common way to make image-only links accessible is to do something like that:
+```
+<a href="theblablasite.com"><img src="logo_or_whatever.png" alt="Relevant info here"><span class="assitive-text">Relevant info here...</span></a>
+
+.assistive-text { height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px; }
+```
+The assistive text cannot be hidden using be removing it from the DOM or using the hidden attribute or CSS prop "visibility".
+
+There is a class in _accessibility.scss for that very purpose:
+```
+.screen-reader-text
+```
 
 ### Social links
 * Youtube: https://www.youtube.com/channel/UCkF2fp-EuKz1rnB9hL2HbjA
