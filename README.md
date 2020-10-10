@@ -246,9 +246,18 @@ The common way to make image-only links accessible is to do something like that:
 ```
 The assistive text cannot be hidden using be removing it from the DOM or using the hidden attribute or CSS prop "visibility".
 
-There is a class in _accessibility.scss for that very purpose:
-```
-.screen-reader-text
+There is a class in _accessibility.scss (screen-reader-text) for that very purpose, here in what I could have used for the footer but ended up replacing with a custom widget:
+```php
+<div class="social-icons">
+	<a href="https://www.facebook.com/majorset" rel="noopener noreferrer" title="Visitez notre page Facebook!">
+		<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/facebook.svg" alt="Notre page Facebook">
+		<span class="screen-reader-text">Visitez notre page Facebook!</span>
+	</a>
+	<a href="https://www.youtube.com/channel/UCkF2fp-EuKz1rnB9hL2HbjA" rel="noopener noreferrer" title="Visitez notre chaîne YouTube!">
+		<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/youtube.svg" alt="Notre chaîne YouTube">
+		<span class="screen-reader-text">Visitez notre chaîne YouTube!</span>
+	</a>
+</div>
 ```
 
 ### Social links

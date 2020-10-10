@@ -68,7 +68,7 @@ svg.branding-logo {
 
 	@include desktop {
 		display: grid;
-		grid-template-columns: 1fr auto;
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 }

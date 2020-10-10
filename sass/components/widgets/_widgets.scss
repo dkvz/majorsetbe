@@ -23,3 +23,16 @@
 .search-form {
 	display: flex;
 }
+
+.social-icons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+
+	.icon {
+		display: block;
+		height: 48px;
+		width: 48px;
+	}
+}
