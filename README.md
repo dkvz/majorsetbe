@@ -236,6 +236,10 @@ Anyway, here are a few resources on things to configure in the theme to get more
 
 The last one explains how to set the allowed fonts sizes but more importantly there's the same thing for colors, and we have theme colors so that would be nice to implement.
 
+### Social links
+* Youtube: https://www.youtube.com/channel/UCkF2fp-EuKz1rnB9hL2HbjA
+* Facebook: https://www.facebook.com/majorset
+
 ## Original README for the underscore base template
 
 _s
