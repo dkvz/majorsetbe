@@ -22,17 +22,31 @@
 
 .search-form {
 	display: flex;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .social-icons {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 50%;
+	margin-bottom: 8px;
+
+	@include tablet {
+		justify-content: flex-start;
+		margin-left: 40px;
+
+		 & > * {
+			 margin-right: 2rem;
+		 }
+	}
 
 	.icon {
 		display: block;
-		height: 48px;
-		width: 48px;
+		height: 54px;
+		width: 54px;
 	}
+
+
+
 }
