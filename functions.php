@@ -241,7 +241,6 @@ add_filter('comment_form_default_fields','prefix_disable_comment_url');
  * because putting the sidebar into the footer for the theme means 
  * I need custom widgets to put things in there
  */
-// Creating the widget 
 class ms_social_icons_widget extends WP_Widget {
   
   function __construct() {

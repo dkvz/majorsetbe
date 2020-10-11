@@ -73,6 +73,18 @@ $ftLoop = new WP_Query($ftArgs);
 			<hr>
 			<?php endif; ?>
 
+			<div class="hero-cta mb-2">
+				<a href="https://www.youtube.com/channel/UCkF2fp-EuKz1rnB9hL2HbjA" target="_blank" rel="noopener noreferrer">
+					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/facebook-white.svg" alt="Notre page Facebook">
+					Retrouvez-nous sur Facebook
+				</a>
+				<a href="https://www.facebook.com/majorset" target="_blank" rel="noopener noreferrer">
+					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/youtube-white.svg" alt="Notre chaîne YouTube">
+					Notre chaîne YouTube
+				</a>
+			</div>
+			<hr>
+
 			<h1 class="entry-title" id="upcomingEvents">Prochains concerts</h1>
 
 			<?php

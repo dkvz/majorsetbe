@@ -31,7 +31,7 @@ Which compiles and minifies the CSS (I added that part) and in case of success, 
 
 ## To configure inside Wordpress
 * Main account should probably be called "Major Set" or "MajorSet".
-* The sidebar - It appears in the footer and most probably has to be changed.
+* The sidebar - It appears in the footer and has to be customized - The social links block has to be manually added (right after search is a good spot).
 * Change site title (in browser title bars).
 * Disallow access to xmlrpc.php at web server level - Will probably make another private note for the hosting concerns.
 * Configure/create the menu - Add the "Représentations" link with either "?post_type=tribe_events" or "/events/list" as URL depending on rewriting being on or off.
@@ -70,6 +70,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
 - [ ] See discussion section about a11y - Some images and the scroll-down button could use screen reader text
+- [ ] Limit the max amount of upcoming events on the front page and add a link to the calendar page if there's more
 - [x] Style the tables
 - [x] Completely delete the "featured-post" branch.
 - [x] Can video elements be made responsive? Are they by default? -> I think so lol
@@ -259,6 +260,8 @@ There is a class in _accessibility.scss (screen-reader-text) for that very purpo
 	</a>
 </div>
 ```
+
+The current social media links code is in `functions.php`, look for a class called `ms_social_icons_widget`.
 
 ### Social links
 * Youtube: https://www.youtube.com/channel/UCkF2fp-EuKz1rnB9hL2HbjA
