@@ -7,7 +7,7 @@
 
 // The amount of custom backgrounds configured
 // in _body.scss (used to pick one at random):
-define('BG_COUNT', 4);
+define('BG_COUNT', 5);
 
 /**
  * Adds custom classes to the array of body classes.

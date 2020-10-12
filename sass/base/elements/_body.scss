@@ -29,3 +29,8 @@ body {
 	background-image: url('assets/bg4.jpg'), linear-gradient($color__ms-background-1 0%, transparentize($color__ms-background-2, 0.12) 99vh);
 	background-blend-mode: overlay;
 }
+
+.bg5 {
+	background-image: url('assets/bg5.jpg'), linear-gradient($color__ms-background-1 0%, transparentize($color__ms-background-2, 0.12) 99vh);
+	background-blend-mode: overlay;
+}

@@ -30,16 +30,25 @@ npm run bundle
 Which compiles and minifies the CSS (I added that part) and in case of success, creates a zip archive one level higher with the theme in it.
 
 ## To configure inside Wordpress
-* Main account should probably be called "Major Set" or "MajorSet".
+* Main account should be called "MajorSet".
+* Global configuration: 
+  * Title: Major Set
+	* Slogan: The Swing Band
+	* Lang has to be French and NOT Belgian French
+	* Change the datetime location to Brussels
+* Permalink config: pick the one with just the post title.
+* Check the note about adding the events calendar plugin in _resources/doc/events_calendar_plugin
+* Install the theme.
 * The sidebar - It appears in the footer and has to be customized - The social links block has to be manually added (right after search is a good spot).
-* Change site title (in browser title bars).
-* Disallow access to xmlrpc.php at web server level - Will probably make another private note for the hosting concerns.
-* Configure/create the menu - Add the "Représentations" link with either "?post_type=tribe_events" or "/events/list" as URL depending on rewriting being on or off.
-* Create the "Blog" page (or "News" or whatever) and select "Blog section" as the page template. Put that page in the menu too.
 * Set the favicon: go to Appearance » Customize and click on the ‘Site Identity’ tab - Change the site icon at the bottom and select the file named `logo-notext_512.png` in the assets directory.
-* Create a category called "Annonces".
+* Disallow access to xmlrpc.php at web server level - Will probably make another private note for the hosting concerns.
+* Configure/create the menu - Add the "Représentations" link with either "?post_type=tribe_events" or "/events/list" as URL depending on rewriting being on or off ; Remove the "home" link ; Activate the menu to be the main menu.
+* Create the "Blog" page (or "News" or whatever) and select "Blog section" as the page template. Put that page in the menu too.
+* Create a category called "Annonces" and another one called "Anciennes annonces".
 * From the admin dashboard: remove the top section "customize your theme" or whatever it's called bu clicking "ignore" on the top right.
-* Create the contact page with a small into message, also link the social accounts in there.
+* Create the contact page with a small into message, also link the social accounts in there - Requires installing wp_forms.
+
+* **Set the production website email address to what it's supposed to be**.
 
 ## Editing the styling
 The "style.css" file at the project root is supposed to be generated using npm scripts, **do not edit that file directly**. It should probably be in the gitignor (**THEY NOW ARE**). Keeping it around so the theme still works even if I forget to build the theme assets.
@@ -69,7 +78,8 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
-- [ ] See discussion section about a11y - Some images and the scroll-down button could use screen reader text
+- [ ] Is there a Wordpress cronjob? 
+- [x] See discussion section about a11y - Some images and the scroll-down button could use screen reader text
 - [ ] Limit the max amount of upcoming events on the front page and add a link to the calendar page if there's more
 - [x] Style the tables
 - [x] Completely delete the "featured-post" branch.
@@ -79,7 +89,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Create a copy of the scroll down button inside the CTA, hide it on mobile and tablet (show the pos. absolute one - hide it on desktop)
 - [x] Ceate a "breaking news" section that only show the latest blog post with a specific custom field - Or look if there's already something like "show on home page"
 - [ ] Check discussion section about the block editor and theme config, there's probably more we can do
-- [ ] I need to think where to link the Facebook and YouTube, kinda forgot about that
+- [x] I need to think where to link the Facebook and YouTube, kinda forgot about that
 - [x] The menu has links on top now? -> Creating a menu changed the header dom
 - [x] Style the blue info message "This event is passed"
 - [x] I need a different style for .tribe-events-schedule when there are no thumbnails for the event and screen is large
@@ -100,14 +110,15 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] The linter will probably yell at us - Change code style to 2 spaces at the very least - Try fixing the SCSS lint errors
 - [x] Flex or grid the search widget to get consistent heihts on the input and button
 - [ ] Add my own lightbox effect using JS
-- [ ] Did I minify the JPG backgrounds? - Add more of them
+- [x] Did I minify the JPG backgrounds? - Add more of them
 - [x] Try the text sizes in Gutenberg
+- [ ] Style .wpforms-confirmation-container to be like the info-box or something I'm already using
 - [ ] There is a theme checker for Wordpress - Should probably use it at some point
 - [ ] Test the npm scripts on Windows
 - [ ] Re-check all the wp-blocks that are available, many of them could use more styling
 - [x] For the Gutenberg colors, we need to create the classes like `has-accent-2-color` for all of the _ms_colors.scss
 - [x] Test changing background colors for blocks in Gutenberg using theme colors; Also try setting a custom color both for foreground and background
-- [ ] Test all the alignement options in the editor and pretty much everything that can be altered with buttons including text styles
+- [ ] Test all the alignement options in the Gutenberg editor - I'm not sure they work for text at all times
 - [x] Minify the CSS in the prod build (is it already (don't think so)?) -> Added the minify to the "bundle" npm script
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
 

@@ -43,6 +43,7 @@ $ftLoop = new WP_Query($ftArgs);
 				<div class="scroll-down-wrapper mt-2 hide-md">
 					<a class="scroll-down" href="#mainSection" title="Afficher la suite">
 						<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
+						<span class="screen-reader-text">Défiler pour afficher la suite</span>
 					</a>
 				</div>
 				<?php endif; ?>
@@ -53,6 +54,7 @@ $ftLoop = new WP_Query($ftArgs);
 		<div class="scroll-down-wrapper abs-bottom hide-lg">
 			<a class="scroll-down" href="#mainSection" title="Afficher la suite">
 				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
+				<span class="screen-reader-text">Défiler pour afficher la suite</span>
 			</a>
 		</div>
 		<?php endif; ?>
@@ -74,11 +76,11 @@ $ftLoop = new WP_Query($ftArgs);
 			<?php endif; ?>
 
 			<div class="hero-cta mb-2">
-				<a href="https://www.youtube.com/channel/UCkF2fp-EuKz1rnB9hL2HbjA" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.facebook.com/majorset" target="_blank" rel="noopener noreferrer">
 					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/facebook-white.svg" alt="Notre page Facebook">
 					Retrouvez-nous sur Facebook
 				</a>
-				<a href="https://www.facebook.com/majorset" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.youtube.com/channel/UCkF2fp-EuKz1rnB9hL2HbjA" target="_blank" rel="noopener noreferrer">
 					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/youtube-white.svg" alt="Notre chaîne YouTube">
 					Notre chaîne YouTube
 				</a>

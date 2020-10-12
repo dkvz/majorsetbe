@@ -18,7 +18,7 @@
 			//the_title( '<h1 class="post-card-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 			the_title( 
 				'<h1 class="post-card-title">', 
-				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" title="Permalien vers l\'article"><img class="icon" src="' . get_bloginfo('template_url') . '/assets/link-teal.svg" alt="Permalien" /></a></h1>' 
+				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" title="Permalien vers l\'article"><img class="icon" src="' . get_bloginfo('template_url') . '/assets/link-teal.svg" alt="Permalien vers l\'article" /></a></h1>' 
 			);
     //endif; 
     ?>
