@@ -24,6 +24,13 @@
 	display: flex;
 	margin-top: 8px;
 	margin-bottom: 8px;
+	flex-direction: column;
+	width: 100%;
+
+	@include tablet {
+		flex-direction: row;
+		width: auto;
+	}
 }
 
 .social-icons {
