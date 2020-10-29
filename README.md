@@ -76,6 +76,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] Style content-search like post-card - Leave the excerpt - Remove thumbnail for events only
 - [x] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
+- [ ] Link the Instagram account: https://www.instagram.com/major_set
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
 - [ ] Is there a Wordpress cronjob? 
