@@ -15,6 +15,7 @@ From the project root directory:
 composer install
 npm install
 ```
+If you (by "you" I mostly mean "future me") get an error about `node-sass` failing to compile, there are multiple ways to solve it but for the moment I just check which `node-sass` version is supposed to work best with my node version, change it accordingly in package.json, remove node_modules and package-lock.json entirely then retry `npm install`. It should work.
 
 From there you can watch for asset changes to auto-recompile the theme:
 ```
