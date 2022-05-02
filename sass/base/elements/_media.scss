@@ -28,3 +28,12 @@ figure {
 .wp-block[data-align="right"] .wp-block-audio {
 	margin-left: 2rem;
 }
+
+// Matches Youtube embeds (probably other embeds as well)
+// Makes centering the block actually work.
+.wp-block-embed.aligncenter {
+	&>div {
+		display: flex;
+		justify-content: center;
+	}
+}
