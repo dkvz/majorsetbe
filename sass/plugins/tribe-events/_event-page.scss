@@ -35,6 +35,7 @@
   .tribe-events-schedule__datetime,
   .tribe-events-schedule__datetime > *,
   h2 {
+    text-transform: capitalize;
     color: $color__ms-primary;
     font-size: 1.25rem;
     display: flex;
