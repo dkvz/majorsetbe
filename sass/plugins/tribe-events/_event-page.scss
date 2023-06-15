@@ -29,7 +29,7 @@
   border: none;
   text-align: center;
   padding: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
   background-color: transparent;
   background: radial-gradient(transparent, transparentize($color__ms-primary, 0.7));
 
@@ -44,12 +44,22 @@
     align-items: center;
     justify-content: center;
     line-height: 1.5;
-    gap: 1rem;
-
+    
     @include tablet {
       font-size: 1.65rem;
       flex-direction: row;
+      gap: 1rem;
     }
+  }
+}
+
+.tribe-block__venue {
+  background-color: transparent;
+  background: radial-gradient(transparent, transparentize($color__ms-primary, 0.7));
+  padding: 0;
+
+  .tribe-block__venue__meta {
+    padding: 1rem;
   }
 }
 
@@ -74,22 +84,39 @@
 .tribe-block__organizer__details h3,
 .tribe-block__venue__name {
   color: $color__ms-accent-2;
+  font-size: inherit;
 }
 
 .tribe-block__events-link {
-  //display: flex;
-  //justify-content: space-between;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*display: grid;
   column-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);*/
   margin-top: 1.5rem;
   text-align: center;
+  font-size: 1.2rem;
 
   .tribe-block__btn--link a {
     @include dark-button;
     width: 100%;
     height: 100%;
     margin: 0;
+  }
+}
+
+.tribe-block__event-website {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    @include regular-button;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 1.2rem;
   }
 }
 
