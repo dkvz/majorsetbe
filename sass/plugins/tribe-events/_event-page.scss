@@ -23,13 +23,14 @@
 }
 
 .tribe-events-schedule,
-.single-tribe_events .tribe-events-schedule {
-  background-color: transparent;
+.single-tribe_events .tribe-events-schedule,
+.single-tribe_events .tribe-blocks-editor .tribe-events-schedule {
   //border: 1px solid $color__ms-grayed;
   border: none;
   text-align: center;
   padding: 1rem;
   margin-bottom: 0;
+  background-color: transparent;
   background: radial-gradient(transparent, transparentize($color__ms-primary, 0.7));
 
   .tribe-events-schedule__datetime,
@@ -43,6 +44,7 @@
     align-items: center;
     justify-content: center;
     line-height: 1.5;
+    gap: 1rem;
 
     @include tablet {
       font-size: 1.65rem;
@@ -118,6 +120,10 @@
   }
 }
 
+/*
+Event plugin stopped showing post featured images
+You have to manually add the relevant block
+
 @include tablet {
   .tribe_events.has-post-thumbnail {
     display: grid;
@@ -141,6 +147,7 @@
 
   }
 }
+*/
 
 .tribe-block__events-link,
 #tribe-events-footer .tribe-events-sub-nav {
