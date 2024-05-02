@@ -267,12 +267,20 @@ class ms_social_icons_widget extends WP_Widget {
 		?>
 		<div class="social-icons">
 			<a href="https://www.facebook.com/majorset" rel="noopener noreferrer" title="Visitez notre page Facebook!">
-				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/facebook.svg" alt="Notre page Facebook">
+				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/facebook.svg" alt="Logo Facebook">
 				<span class="screen-reader-text">Visitez notre page Facebook!</span>
 			</a>
 			<a href="https://www.youtube.com/channel/UCkF2fp-EuKz1rnB9hL2HbjA" rel="noopener noreferrer" title="Visitez notre chaîne YouTube!">
-				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/youtube.svg" alt="Notre chaîne YouTube">
+				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/youtube.svg" alt="Logo Youtube">
 				<span class="screen-reader-text">Visitez notre chaîne YouTube!</span>
+			</a>
+			<a href="https://www.instagram.com/major_set/" rel="noopener noreferrer" title="Visitez notre chaîne YouTube!">
+				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/instagram.svg" alt="Logo Instagram">
+				<span class="screen-reader-text">Suivez-nous sur Instagram!</span>
+			</a>
+			<a href="https://open.spotify.com/intl-fr/artist/0TrNi8a9FepQer3cU70Ojq?si=u1Rz5ymmQde7iW8hQuWDPQ" rel="noopener noreferrer" title="Visitez notre chaîne YouTube!">
+				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/spotify.svg" alt="Logo Spotify">
+				<span class="screen-reader-text">Ecoutez-nous sur Spotify!</span>
 			</a>
 		</div>
     <?php

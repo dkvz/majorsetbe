@@ -62,6 +62,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 * 3 media queries are commonly used in the existing CSS: 37.5em, 48em, and 768px (which is 48em if html font size is 16px)
 
 ## TODO
+- [ ] Social buttons on home page could be limited to a grid of 1 element per row on mobile, 2 works for the other sizes.
 - [x] Show some message in case there aren't any upcoming concerts (with a CTA to something?)
 - [x] Style the mobile menu button and remove the margins for li elements unless we're on larger screen - add a padding (which we'll need to remove on large screens).
 - [x] Add sidebar in the footer
@@ -80,7 +81,7 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [x] How I structured posts with thumbnails in content.php should be applied to other relevant php files
 - [x] Style the comments themselves and also try comment threads to see how these look and don't forget the inline response form
 - [ ] Style image legends - Currently appear as normal big text, should probably also use grayed color
-- [ ] Link the Instagram account: https://www.instagram.com/major_set
+- [x] Link the Instagram account: https://www.instagram.com/major_set
 - [ ] Remember to explain to authors they really need to put a "Read more" ruler in any long post
 - [ ] In event cards, the descriptions does not show carriage returns - But that may be due to it being an excerpt? I'll have to tell authors to fill in the excerpt field
 - [ ] Is there a Wordpress cronjob? 
@@ -123,7 +124,6 @@ The "style.css" file at the project root is supposed to be generated using npm s
 - [ ] Re-check all the wp-blocks that are available, many of them could use more styling
 - [x] For the Gutenberg colors, we need to create the classes like `has-accent-2-color` for all of the _ms_colors.scss
 - [x] Test changing background colors for blocks in Gutenberg using theme colors; Also try setting a custom color both for foreground and background
-- [ ] Test all the alignement options in the Gutenberg editor - I'm not sure they work for text at all times
 - [x] Minify the CSS in the prod build (is it already (don't think so)?) -> Added the minify to the "bundle" npm script
 - [ ] Use Webpack instead of node-sass alone so that we can also minify the JS, use imports etc.
 
