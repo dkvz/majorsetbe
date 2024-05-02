@@ -84,6 +84,14 @@ $ftLoop = new WP_Query($ftArgs);
 					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/youtube-white.svg" alt="Notre chaîne YouTube">
 					Notre chaîne YouTube
 				</a>
+				<a href="https://www.instagram.com/major_set/" target="_blank" rel="noopener noreferrer">
+					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/instagram.svg" alt="Notre page Instagram">
+					Suivez-nous sur Instagram
+				</a>
+				<a href="https://open.spotify.com/intl-fr/artist/0TrNi8a9FepQer3cU70Ojq?si=u1Rz5ymmQde7iW8hQuWDPQ" target="_blank" rel="noopener noreferrer">
+					<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/spotify.svg" alt="Notre page artiste sur Spotify">
+					Nos titres sur Spotify
+				</a>
 			</div>
 			<hr>
 
