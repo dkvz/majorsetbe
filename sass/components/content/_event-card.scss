@@ -13,7 +13,8 @@
   header {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    background-color: transparentize($color__ms-primary, 0.05);
+    //background-color: transparentize($color__ms-primary, 0.05);
+    background-color: $color__ms-background-2;
 
     h1, h2 {
       margin: 0;
@@ -50,6 +51,7 @@
   border-bottom: 2px solid $color__ms-primary;
   display: flex;
   flex-direction: column;
+  background: $color__ms-background-2;
 
   a.post-thumbnail {
     display: block;
@@ -75,4 +77,5 @@
 
 .event-card-footer {
   text-align: center;
+  background-color: $color__ms-background-2
 }
