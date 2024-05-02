@@ -64,7 +64,7 @@ a.scroll-down {
 	font-size: 1rem;
 	text-align: center;
 	font-weight: 700;
-	border: 2px solid $color__ms-accent-2;
+	border: 2px solid transparentize($color__ms-primary, 0.8);
 	background-color: transparentize($color__ms-primary, 0.2);
 	border-radius: 5px;
 	text-transform: uppercase;
