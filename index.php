@@ -34,7 +34,6 @@ $ftLoop = new WP_Query($ftArgs);
 
 		<section class="hero-wrapper">
 			<div class="hero">
-				<h1 class="hero-title"><span>Major Set:</span> <span>The Band</span></h1>
 				<div class="hero-cta">
 					<a href="#upcomingEvents">Prochains concerts</a>
 					<a href="/contact">Engagez-nous!</a>
