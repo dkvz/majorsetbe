@@ -8,13 +8,13 @@
 	@include center-flex-mixin;
 
 	@include tablet {
-		background-size: 600px;
+		background-size: cover;
 	}
 
-	@include desktop {
+	/*@include desktop {
 		background-position: left center;
 		align-items: flex-end;
-	}
+	}*/
 }
 
 body.admin-bar .hero-wrapper {
