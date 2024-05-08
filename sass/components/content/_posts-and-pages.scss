@@ -31,7 +31,7 @@
 	margin: 0 auto;
 	width: 100%;
 	opacity: 0.8;
-	filter: saturate(20%);
+	filter: saturate(60%);
 }
 
 body.admin-bar .hero-wrapper {
@@ -197,6 +197,10 @@ a.scroll-down {
 	.no-meta .post-header,
 	.post-card.featured header {
 		grid-template-columns: 1fr;
+	}
+
+	.hero-cta a.hide-link-md {
+		display: none;
 	}
 }
 

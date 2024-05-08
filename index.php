@@ -39,7 +39,6 @@ $ftLoop = new WP_Query($ftArgs);
 					<a href="#upcomingEvents">Prochains concerts</a>
 					<a href="/contact">Engagez-nous!</a>
 				</div>
-				
 			</div>
 		</section>
 
