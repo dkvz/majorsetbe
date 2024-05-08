@@ -39,19 +39,12 @@ $ftLoop = new WP_Query($ftArgs);
 					<a href="#upcomingEvents">Prochains concerts</a>
 					<a href="/contact">Engagez-nous!</a>
 				</div>
-				<?php if ( $ftLoop->have_posts() ): ?>
-				<div class="scroll-down-wrapper mt-2 hide-md">
-					<a class="scroll-down" href="#mainSection" title="Afficher la suite">
-						<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
-						<span class="screen-reader-text">Défiler pour afficher la suite</span>
-					</a>
-				</div>
-				<?php endif; ?>
+				
 			</div>
 		</section>
 
 		<?php if ( $ftLoop->have_posts() ): ?>
-		<div class="scroll-down-wrapper abs-bottom hide-lg">
+		<div class="scroll-down-wrapper abs-bottom">
 			<a class="scroll-down" href="#mainSection" title="Afficher la suite">
 				<img class="icon" src="<?php bloginfo('template_url'); ?>/assets/arrow-down.svg" alt="Afficher la suite" />
 				<span class="screen-reader-text">Défiler pour afficher la suite</span>

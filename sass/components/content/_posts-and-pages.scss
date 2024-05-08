@@ -18,8 +18,13 @@
 	}*/
 }
 
-.hero-img {
+.hero {
 	position: absolute;
+	top: 50%;
+}
+
+.hero-img {
+	position: relative;
 	top: 0;
 	z-index: -1;
 	display: block;
