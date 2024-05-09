@@ -33,7 +33,13 @@ $ftLoop = new WP_Query($ftArgs);
 	<main id="primary" class="site-main flex-center">
 
 		<section class="hero-wrapper">
-			<img src="<?php bloginfo('template_url'); ?>/assets/hero1.png" alt="Le groupe au complet sur fond champêtre" class="hero-img">
+			<!--<img src="<?php bloginfo('template_url'); ?>/assets/hero1.png" alt="Le groupe au complet sur fond champêtre" class="hero-img">-->
+			<img
+				srcset="<?php bloginfo('template_url'); ?>/assets/hero2m.png 1200w, <?php bloginfo('template_url'); ?>/assets/hero1.png 1900w"
+				sizes="(max-width: 600px) 1200px, 1900px"
+				src="<?php bloginfo('template_url'); ?>/assets/hero1.png"
+				alt="Le groupe Le groupe au complet sur fond champêtre"
+				class="hero-img">
 			<div class="hero">
 				<div class="hero-cta">
 					<!--<a href="#upcomingEvents">Prochains concerts</a>-->
