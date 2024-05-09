@@ -36,7 +36,7 @@ $ftLoop = new WP_Query($ftArgs);
 			<img src="<?php bloginfo('template_url'); ?>/assets/hero1.png" alt="Le groupe au complet sur fond champêtre" class="hero-img">
 			<div class="hero">
 				<div class="hero-cta">
-					<a href="#upcomingEvents">Prochains concerts</a>
+					<!--<a href="#upcomingEvents">Prochains concerts</a>-->
 					<a href="/contact">Engagez-nous!</a>
 				</div>
 			</div>

@@ -106,6 +106,10 @@ a.scroll-down {
 	}
 }
 
+.hero-cta a:only-child {
+	grid-column: span 2;
+}
+
 .abs-bottom {
 	position: absolute;
 	bottom: 30px;
