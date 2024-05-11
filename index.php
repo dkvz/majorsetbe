@@ -42,8 +42,8 @@ $ftLoop = new WP_Query($ftArgs);
 				class="hero-img">
 			<div class="hero">
 				<div class="hero-cta">
-					<!--<a href="#upcomingEvents">Prochains concerts</a>-->
-					<a href="/contact">Engagez-nous!</a>
+					<a href="#upcomingEvents">Prochains concerts</a>
+					<!--<a href="/contact">Contactez-nous!</a>-->
 				</div>
 			</div>
 		</section>
